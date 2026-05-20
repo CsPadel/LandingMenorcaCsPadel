@@ -1,0 +1,109 @@
+---
+import '../styles/global.css';
+// Local fonts via fontsource (latin subset only) — no Google Fonts CDN dependency
+import '@fontsource/jost/latin-300.css';
+import '@fontsource/jost/latin-400.css';
+import '@fontsource/jost/latin-500.css';
+import '@fontsource/jost/latin-600.css';
+import '@fontsource/cormorant-garamond/latin-300.css';
+import '@fontsource/cormorant-garamond/latin-400.css';
+import '@fontsource/cormorant-garamond/latin-600.css';
+import '@fontsource/cormorant-garamond/latin-300-italic.css';
+import '@fontsource/cormorant-garamond/latin-400-italic.css';
+import Navbar from '../components/Navbar';
+import FooterIsland from '../components/FooterIsland';
+
+interface Props {
+	title: string;
+	description?: string;
+	keywords?: string;
+	ogImage?: string;
+	ogType?: string;
+	canonical?: string;
+	schema?: object;
+	lang?: string;
+}
+
+const {
+	title,
+	description = "Luxury padel retreat in Menorca. 5 days of private coaching, boat tours, vineyard visits & gourmet dining. 30 Sep – 4 Oct 2026. CourtSide.",
+	keywords = "Menorca padel retreat, luxury padel holiday Menorca, padel training Mediterranean, CourtSide Menorca 2026",
+	ogImage = "/imagenes/EM-2.webp",
+	ogType = "website",
+	canonical,
+	schema,
+	lang = "en"
+} = Astro.props;
+
+const siteURL = Astro.site ?? new URL("https://menorca.courtsidepadel.com");
+const canonicalURL = canonical ?? Astro.url.href;
+
+const ogImageAbsolute = ogImage.startsWith("http")
+	? ogImage
+	: new URL(ogImage, siteURL).href;
+
+const isSpanish = lang === "es";
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary SEO -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+		<link rel="canonical" href={canonicalURL} />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content={ogType} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImageAbsolute} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={title} />
+		<meta property="og:site_name" content="CourtSide Padel Retreats" />
+		<meta property="og:locale" content={isSpanish ? "es_ES" : "en_GB"} />
+		<meta property="og:locale:alternate" content={isSpanish ? "en_GB" : "es_ES"} />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@courtsidepadel" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImageAbsolute} />
+		<meta name="twitter:image:alt" content={title} />
+
+		<!-- Crawl + indexing -->
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<meta name="theme-color" content="#01192C" />
+
+		<!-- Fonts are now loaded locally via fontsource imports in frontmatter -->
+
+		<!-- Structured Data (JSON-LD) -->
+		{schema && (
+			<script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+		)}
+		<slot name="head" />
+	</head>
+	<body class="bg-brand-dark text-brand-light font-inter antialiased overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark" style="font-feature-settings: 'kern' 1, 'liga' 1;">
+		<!-- Skip to main content for keyboard/screen reader users -->
+		<a
+			href="#main-content"
+			class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded focus:shadow-lg focus:outline-none"
+		>
+			Skip to main content
+		</a>
+		<Navbar client:load />
+		<slot />
+		<FooterIsland client:idle />
+	</body>
+</html>

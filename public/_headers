@@ -1,0 +1,10 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# NOTE: HSTS and a full CSP policy should be configured at the
+# CDN/hosting level (Cloudflare, Netlify, Vercel) for production.
+# For Vercel: add a vercel.json with headers configuration.
+# For Cloudflare: configure via Transform Rules in the dashboard.

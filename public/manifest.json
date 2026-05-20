@@ -1,0 +1,23 @@
+{
+  "name": "CourtSide Padel Retreats — Menorca",
+  "short_name": "CourtSide Padel",
+  "description": "Luxury padel retreat in Menorca. 5 days of private coaching, boat tours, vineyard visits & gourmet dining.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#01192C",
+  "background_color": "#01192C",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "48x48"
+    }
+  ]
+}
