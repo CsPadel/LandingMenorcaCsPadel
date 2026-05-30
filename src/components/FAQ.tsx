@@ -9,7 +9,7 @@ interface FAQProps {
 }
 
 export default function FAQ({ theme = 'dark' }: FAQProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const faqs = t('menorcaPage.faq', { returnObjects: true }) as Array<{ q: string; a: string }>;
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -95,9 +95,7 @@ export default function FAQ({ theme = 'dark' }: FAQProps) {
                   : 'border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark'
               }`}
             >
-              {showAll
-                ? (i18n.language === 'es' ? 'Ver menos' : 'View less')
-                : (i18n.language === 'es' ? 'Ver todas las preguntas' : 'View all questions')}
+              {showAll ? t('menorcaPage.faqViewLess') : t('menorcaPage.faqViewAll')}
             </button>
           </div>
         )}

@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 export const resources = {
   en: {
@@ -16,6 +17,8 @@ export const resources = {
         itineraryEyebrow: "Programme",
         itineraryTitle: "The Itinerary",
         faqTitle: "Frequently Asked Questions",
+        faqViewLess: "View less",
+        faqViewAll: "View all questions",
         whatsIncluded: {
           title: "What's included?",
           subtitle: "From arrival to departure, every detail of your retreat is taken care of - coaching, dining, transport, activities, all included.",
@@ -334,6 +337,8 @@ export const resources = {
         itineraryEyebrow: "Programa",
         itineraryTitle: "El Itinerario",
         faqTitle: "Preguntas Frecuentes",
+        faqViewLess: "Ver menos",
+        faqViewAll: "Ver todas las preguntas",
         whatsIncluded: {
           title: "¿Qué incluye?",
           subtitle: "Desde la llegada hasta la salida, cada detalle de tu retiro está cubierto: entrenamiento, gastronomía, transporte, actividades; todo incluido.",
@@ -637,15 +642,341 @@ export const resources = {
         ]
       }
     }
+  },
+  fr: {
+    translation: {
+      navbar: {
+        home: "Accueil"
+      },
+      menorcaPage: {
+        heroTitle: "MINORQUE",
+        heroSubtitle: "Un sanctuaire méditerranéen. Cinq jours. Padel, art de vivre, tranquillité.",
+        heroMeta: "30 Sep – 4 Oct 2026 · Minorque · Tout Inclus",
+        bookBtn: "Voir l'expérience",
+        agendaTitle: "L'Itinéraire",
+        itineraryEyebrow: "Programme",
+        itineraryTitle: "L'Itinéraire",
+        faqTitle: "Questions Fréquentes",
+        faqViewLess: "Voir moins",
+        faqViewAll: "Voir toutes les questions",
+        whatsIncluded: {
+          title: "Qu'est-ce qui est inclus ?",
+          subtitle: "De l'arrivée au départ, chaque détail de votre séjour est pris en charge — coaching, repas, transport, activités, tout inclus.",
+          pillars: [
+            {
+              tag: "Coaching d'Élite",
+              title: "Où Vous Vous Entraînerez — Padelin",
+              subtitle: "Le meilleur club de padel de Minorque et terrain d'entraînement du numéro 1 mondial Gemma Triay",
+              bullets: [
+                "Entraînez-vous là où Gemma Triay, l'une des meilleures joueuses de padel au monde, perfectionne son jeu",
+                "Bénéficiez d'un coaching expert d'anciens professionnels qui adaptent chaque session à votre niveau",
+                "Profitez d'installations de qualité incluant vestiaires, bar/restaurant et terrasse extérieure",
+                "Situé à Sant Lluís, à quelques minutes en voiture de l'hôtel"
+              ]
+            },
+            {
+              tag: "Séjour de Luxe",
+              title: "Séjour de Luxe au Barceló Nura",
+              subtitle: "Un resort côtier 5 étoiles à Biniancollet, où le design contemporain rencontre la beauté naturelle de Minorque",
+              bullets: [
+                "Chambres spacieuses et lumineuses avec terrasses privées ou piscines semi-privées, conçues pour le repos et le confort",
+                "Accès à un spa complet, piscines intérieures et extérieures et une salle de sport moderne",
+                "Niché à quelques pas de la Méditerranée, offrant des vues apaisantes et des couchers de soleil dorés",
+                "Petit-déjeuner quotidien et cuisine d'inspiration méditerranéenne dans un cadre élégant et tranquille"
+              ]
+            },
+            {
+              tag: "Gastronomie Raffinée",
+              title: "Les Saveurs de Minorque",
+              subtitle: "Un voyage culinaire soigneusement sélectionné",
+              bullets: [
+                "Restaurants triés sur le volet proposant un mélange de saveurs méditerranéennes, fruits de mer frais et options de viande et végétariennes de haute qualité",
+                "Cadres gastronomiques uniques allant des terrasses en bord de mer aux endroits animés au cœur de Mahón et le long du port",
+                "Un déjeuner ou dîner spécial dans un restaurant reconnu par le Guide Michelin, inclus dans l'expérience",
+                "L'accent est mis sur des ingrédients authentiques et de saison, et des repas conviviaux qui reflètent le charme de l'île"
+              ]
+            },
+            {
+              tag: "Aventures insulaires inoubliables",
+              title: "Au-Delà du Court",
+              subtitle: "Quittez le court et plongez-vous dans les aventures passionnantes en plein air de Minorque",
+              bullets: [
+                "Découvrez le charme de Mahón lors d'une visite guidée de ses rues historiques et de son port animé",
+                "Profitez d'une visite du vignoble et d'une dégustation de vins et de gastronomie à Binifadet, avec fromages et spécialités locales",
+                "Admirez un coucher de soleil époustouflant à la Cova d'en Xoroi, perchée sur une falaise au-dessus de la Méditerranée",
+                "Les activités mentionnées sont incluses dans notre programme, avec des options supplémentaires disponibles sur demande"
+              ]
+            }
+          ]
+        },
+        agenda: [
+          {
+            dayStr: 'Jour 01',
+            date: 'Mar 30 Sep',
+            label: 'Arrivée & Bienvenue',
+            activities: [
+              {
+                time: 'Matin',
+                title: 'Arrivée & Check-In',
+                desc: 'Transferts privés depuis l\'aéroport au Barceló Nura. Boissons de bienvenue à l\'arrivée et packs dans les chambres.',
+                image: '/imagenes/IMG_2914.webp',
+              },
+              {
+                time: '14:00 – 16:30',
+                title: 'Déjeuner en Bord de Mer',
+                desc: 'Profitez d\'un déjeuner relaxant en bord de mer pour bien commencer le séjour et faire connaissance avec les autres participants.',
+                image: '/imagenes/Cala en porter.webp',
+              },
+              {
+                time: '17:00 – 18:30',
+                title: 'Session de Padel d\'Échauffement',
+                desc: 'Session introductive à Padelin. Format détendu et convivial pour mettre le groupe en jambes.',
+                image: '/imagenes/EM-4.webp',
+              },
+              {
+                time: '20:00',
+                title: 'Dîner de Bienvenue',
+                desc: 'Dîner d\'ouverture au restaurant Ses Forquilles à Mahón. Réservation de groupe confirmée.',
+                image: '/imagenes/bambu.webp',
+              },
+            ],
+          },
+          {
+            dayStr: 'Jour 02',
+            date: 'Mer 1 Oct',
+            label: 'Padel & Tour en Bateau',
+            activities: [
+              {
+                time: '08:30 – 09:15',
+                title: 'Petit-Déjeuner — Barceló Nura',
+                desc: 'Petit-déjeuner de groupe avec places réservées à l\'hôtel. Se préparer avant une matinée complète sur le court.',
+                image: '/imagenes/bambu.webp',
+              },
+              {
+                time: '10:00 – 12:00',
+                title: 'Coaching Padel & Matchs',
+                desc: 'Sessions sur le court à Padelin avec exercices dirigés par des coachs et matchs compétitifs.',
+                image: '/imagenes/EM-22.webp',
+              },
+              {
+                time: '13:45 – 17:30',
+                title: 'Déjeuner & Tour en Bateau — Sa Punta',
+                desc: 'Déjeuner au restaurant Sa Punta suivi d\'une croisière en charter depuis Es Castell.',
+                image: '/imagenes/sa punta.webp',
+              },
+              {
+                time: '20:00',
+                title: 'Dîner — Hôtel / Soirée Libre',
+                desc: 'Repas à l\'hôtel inclus. Le concierge est disponible pour des recommandations de restaurants.',
+                image: '/imagenes/2313 copy.webp',
+              },
+            ],
+          },
+          {
+            dayStr: 'Jour 03',
+            date: 'Jeu 2 Oct',
+            label: 'Padel & Vignoble',
+            activities: [
+              {
+                time: '08:30 – 09:15',
+                title: 'Petit-Déjeuner — Barceló Nura',
+                desc: 'Petit-déjeuner de groupe. Sessions par groupes de niveau présentées pendant le repas.',
+                image: '/imagenes/bambu.webp',
+              },
+              {
+                time: '10:00 – 12:00',
+                title: 'Coaching Padel & Matchs',
+                desc: 'Sessions par groupes de niveau à Padelin. Amélioration technique et jeu compétitif.',
+                image: '/imagenes/EM-53.webp',
+              },
+              {
+                time: '13:30 – 16:30',
+                title: 'Visite du Vignoble & Déjeuner — Binifadet',
+                desc: 'Visite et déjeuner à la cave Binifadet. Dégustation de vins et fromages incluse.',
+                image: '/imagenes/binifadet.webp',
+              },
+              {
+                time: '20:00',
+                title: 'Dîner — La Calita',
+                desc: 'Dîner au restaurant La Calita. Repas inclus.',
+                image: '/imagenes/2313 copy.webp',
+              },
+            ],
+          },
+          {
+            dayStr: 'Jour 04',
+            date: 'Ven 3 Oct',
+            label: 'Tournoi & Coucher de Soleil',
+            activities: [
+              {
+                time: '07:30 – 08:15',
+                title: 'Petit-Déjeuner Matinal — Barceló Nura',
+                desc: 'La journée du tournoi commence tôt. Packs d\'hydratation prêts et places de groupe réservées.',
+                image: '/imagenes/bambu.webp',
+              },
+              {
+                time: '09:00 – 13:00',
+                title: 'Tournoi de Padel — Padelin',
+                desc: 'Tournoi round-robin en double mixte à Padelin. Trophée et prix confirmés avec le lieu.',
+                image: '/imagenes/JOPS-1071.webp',
+              },
+              {
+                time: '13:00 – 14:30',
+                title: 'Déjeuner du Tournoi & Remise des Prix',
+                desc: 'Déjeuner sur place à Padelin suivi de la cérémonie de remise des prix et du trophée.',
+                image: '/imagenes/2808 copy.webp',
+              },
+              {
+                time: '17:00 – 19:00',
+                title: "Coucher de Soleil & Tapas — Cova d'en Xoroi",
+                desc: "Musique live, tapas et cocktails à l'iconique Cova d'en Xoroi. Coucher de soleil vers 19h30.",
+                image: '/imagenes/cap roig.webp',
+              },
+            ],
+          },
+          {
+            dayStr: 'Jour 05',
+            date: 'Sam 4 Oct',
+            label: 'Session Finale & Au Revoir',
+            activities: [
+              {
+                time: '08:30 – 09:15',
+                title: 'Dernier Petit-Déjeuner — Barceló Nura',
+                desc: 'Dernier petit-déjeuner de groupe. Bagages à sortir avant 11h00.',
+                image: '/imagenes/bambu.webp',
+              },
+              {
+                time: '10:30 – 13:00',
+                title: 'Session de Padel Optionnelle — Padelin',
+                desc: 'Session décontractée en court libre pour ceux dont les vols le permettent. Entièrement optionnelle.',
+                image: '/imagenes/EM-81.webp',
+              },
+              {
+                time: 'Dès 11:00',
+                title: 'Check-Out & Transferts vers l\'Aéroport',
+                desc: 'Transferts privés selon l\'heure de vol individuelle. Départ tardif disponible sur demande.',
+                image: '/imagenes/IMG_2914.webp',
+              },
+            ],
+          }
+        ],
+        faq: [
+          { q: "Ai-je besoin d'expérience en padel ?", a: "Non. Nos séjours accueillent tous les niveaux — le coaching est adapté des débutants construisant les bases aux joueurs avancés affinant leur stratégie." },
+          { q: "Tout est-il inclus ?", a: "Oui. Tout ce qui figure dans l'itinéraire est inclus — hébergement, tous les repas, coaching, matchs, transport local et activités. Les participants peuvent décider de ne pas participer à une activité. Tout ce qui est réservé en dehors de l'itinéraire est à la charge du participant." },
+          { q: "Les vols et transferts aéroport sont-ils inclus ?", a: "Les transferts depuis et vers l'Aéroport de Mahón sont inclus. Les vols ne le sont pas — notre concierge peut conseiller sur les meilleures routes ou organiser un charter privé sur demande." },
+          { q: "Un partenaire non-joueur peut-il m'accompagner ?", a: "Oui. Les partenaires non-joueurs paient le même prix du séjour, et leur programme peut être personnalisé selon leurs préférences." },
+          { q: "Qu'en est-il des régimes alimentaires particuliers ?", a: "Notre chef privé sur place élabore des menus sur mesure à partir d'un questionnaire bien-être et alimentaire envoyé avant l'arrivée." },
+          { q: "Combien de participants par séjour ?", a: "Chaque séjour ouvert est plafonné pour préserver l'exclusivité. Les séjours privés requièrent un minimum de 6 participants." },
+          { q: "Puis-je prolonger mon séjour avant ou après le retreat ?", a: "Oui — nous pouvons organiser des nuits supplémentaires au Barceló Nura sur demande." },
+          { q: "Puis-je réserver un séjour privé à d'autres dates ?", a: "Oui. Nous organisons des séjours privés entièrement sur mesure n'importe quelle semaine de l'année, avec un minimum de 6 participants et 2 mois de préavis." },
+          { q: "Quand aura lieu le prochain séjour à Minorque ?", a: "Du 30 septembre au 4 octobre 2026 (4 nuits, 5 jours). Les places sont limitées — une réservation anticipée est conseillée." },
+          { q: "Quel est le montant de l'acompte et quand le solde est-il dû ?", a: "Un acompte de 40 % assure votre place. Le solde restant est dû 6 semaines avant la date de début du séjour." },
+          { q: "Quelle est la politique d'annulation ?", a: "Les annulations effectuées plus de 10 semaines avant la date de début du séjour donnent droit au remboursement intégral de l'acompte. Dans les 10 semaines précédant la date de début, l'acompte de 40 % est non remboursable." }
+        ],
+        rooms: {
+          sectionTag: "Hébergement",
+          title: "Options de réservation",
+          subtitle: "Connectez-vous, jouez et détendez-vous dans nos suites privées.",
+          priceLabel: "Prix Total du Séjour",
+          whatsIncluded: "Ce qui est inclus",
+          securePlace: "Réserver ma Place",
+          openRetreat: {
+            name: "Séjour Ouvert",
+            tag: "Solo ou entre Amis",
+            priceFrom: "",
+            priceShared: "à partir de £2 400 (occupation partagée)",
+            priceSingle: "à partir de £1 750 (occupation individuelle)",
+            description: "Seul ou avec un ami. Partagez le séjour avec un groupe sélectionné de joueurs partageant les mêmes intérêts. Dates ouvertes, groupe mixte.",
+            capacity: "1 - 2 participants par suite",
+            amenities: ["Hébergement", "Tous les repas", "Coaching", "Matchs", "Transport local", "Activités"]
+          },
+          privateRetreat: {
+            name: "Séjour Privé",
+            tag: "Exclusivité Totale",
+            priceFrom: "",
+            description: "Réservez l'intégralité du séjour en exclusivité pour votre groupe d'amis ou de famille.",
+            capacity: "8 - 20 participants",
+            amenities: ["4 Nuits Tout Inclus", "Exclusivité totale", "Courts privés", "Programme personnalisé"]
+          },
+          corporateRetreat: {
+            name: "Séjour Corporatif / Exécutif",
+            tag: "C-Suite",
+            priceFrom: "",
+            description: "Un séjour fermé conçu pour les sorties d'entreprise, les équipes dirigeantes ou l'hospitalité client. Programme sur mesure disponible.",
+            capacity: "Jusqu'à 20 dirigeants",
+            amenities: ["4 Nuits Tout Inclus", "Salle de réunion privée", "Concierge d'affaires"]
+          }
+        }
+      },
+      footer: {
+        rights: "© 2026 CourtSide Padel. Tous droits réservés.",
+        privacy: "Politique de Confidentialité",
+        cookies: "Politique de Cookies",
+        terms: "Conditions Générales",
+        legal: "Mentions Légales"
+      },
+      bespokeRetreats: {
+        title: "Vous le voulez à vos dates ?",
+        description: "Au-delà de nos séjours ouverts, nous organisons des séjours privés sur mesure à Minorque pour des groupes fermés, entièrement personnalisables selon vos dates, votre groupe et vos priorités — de l'intensité du coaching aux préférences gastronomiques en passant par les expériences hors du court.",
+        features: [
+          "Minimum 6 participants",
+          "N'importe quelle semaine de l'année",
+          "Entièrement sur mesure"
+        ],
+        cta: "Demander un séjour privé sur mesure →",
+        modalTitle: "Demande Sur Mesure",
+        modalDesc: "Laissez vos coordonnées et un spécialiste vous contactera pour personnaliser votre séjour privé.",
+        nameLabel: "Nom Complet",
+        emailLabel: "Adresse E-mail",
+        datesLabel: "Dates Souhaitées (Optionnel)",
+        guestsLabel: "Nombre de Participants (Min 6)",
+        submitBtn: "Demander un Devis",
+        successMsg: "Merci. Notre équipe de concierge vous contactera prochainement."
+      },
+      testimonials: {
+        label: "Avis",
+        title: "Ce que disent nos participants",
+        subtitle: "Des participants arrivés en tant que joueurs. Repartis en tant que membres de la communauté Courtside.",
+        items: [
+          {
+            name: "Tomasz Campbell",
+            role: "Directeur Senior, Londres",
+            text: "Vraiment bouleversant. Les sessions de coaching ont élevé mon jeu, mais la journée en yacht et les dîners gastronomiques en ont fait une escapade de luxe complète. Déjà réservé pour l'année prochaine.",
+            initials: "T",
+            image: "/imagenes/IMG_2167.webp"
+          },
+          {
+            name: "Ana Martínez",
+            role: "PDG, Madrid",
+            text: "L'attention aux détails est incroyable. Du transfert aéroport au dîner d'adieu, chaque moment semblait taillé sur mesure. C'est ainsi que doit être un séjour padel.",
+            initials: "A",
+            image: "/imagenes/JOPS-721.webp"
+          },
+          {
+            name: "James Whitfield",
+            role: "Associé Directeur, Édimbourg",
+            text: "Je suis venu pour le padel et je suis resté pour l'expérience. Le déjeuner au vignoble, la journée du tournoi, le coucher de soleil à la Cova d'en Xoroi — chaque journée était extraordinaire.",
+            initials: "J",
+            image: "/imagenes/Cala en porter.webp"
+          }
+        ]
+      }
+    }
   }
 };
 
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en",
-    fallbackLng: "es",
+    fallbackLng: "en",
+    supportedLngs: ["en", "es", "fr"],
+    detection: {
+      order: ["localStorage", "navigator"],
+      lookupLocalStorage: "i18nextLng",
+      caches: ["localStorage"],
+    },
     interpolation: {
       escapeValue: false
     }
