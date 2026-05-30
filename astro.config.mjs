@@ -17,9 +17,6 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
-    resolve: {
-      tsconfigPaths: true
-    },
     server: {
       headers: {
         'X-Content-Type-Options': 'nosniff',

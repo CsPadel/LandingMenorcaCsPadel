@@ -7,6 +7,7 @@ import MenorcaWhatsIncluded from '../components/MenorcaWhatsIncluded';
 import BespokeRetreats from '../components/BespokeRetreats';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import FAQ from '../components/FAQ';
+import BookingDrawer from '../components/BookingDrawer';
 
 const SITE = "https://menorca.courtsidepadel.com";
 const seoTitle = "Menorca Padel Retreat 2026 | Luxury Padel Holiday Mediterranean | CourtSide";
@@ -198,17 +199,19 @@ const organizationSchema = {
           </div>
         </div>
 
-        <a
-          href="#rooms"
-          class="inline-flex items-center gap-3 px-12 py-5 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest text-sm hover:bg-brand-light transition-colors duration-300"
+        <button
+          onclick="globalThis.dispatchEvent(new Event('open-booking-drawer'))"
+          class="inline-flex items-center gap-3 px-12 py-5 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest text-sm hover:bg-brand-light transition-colors duration-300 cursor-pointer"
           aria-label="Secure your place at CourtSide Menorca padel retreat 2026"
         >
           Secure Your Place →
-        </a>
+        </button>
 
         <p class="text-brand-light/55 text-sm mt-6">No commitment required. Speak with your Personal Concierge first.</p>
       </div>
     </section>
+
+    <BookingDrawer client:load />
 
   </main>
 </Layout>
