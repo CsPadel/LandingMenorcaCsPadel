@@ -22,6 +22,7 @@ interface Props {
 	canonical?: string;
 	schema?: object;
 	lang?: string;
+	hideLangToggle?: boolean;
 }
 
 const {
@@ -32,7 +33,8 @@ const {
 	ogType = "website",
 	canonical,
 	schema,
-	lang = "en"
+	lang = "en",
+	hideLangToggle = false
 } = Astro.props;
 
 const siteURL = Astro.site ?? new URL("https://menorca.courtsidepadel.com");
@@ -42,7 +44,9 @@ const ogImageAbsolute = ogImage.startsWith("http")
 	? ogImage
 	: new URL(ogImage, siteURL).href;
 
-const isSpanish = lang === "es";
+const localeMap: Record<string, string> = { en: "en_GB", es: "es_ES", fr: "fr_FR" };
+const currentLocale = localeMap[lang] ?? "en_GB";
+const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLocale);
 ---
 
 <!doctype html>
@@ -71,8 +75,10 @@ const isSpanish = lang === "es";
 		<meta property="og:image:height" content="630" />
 		<meta property="og:image:alt" content={title} />
 		<meta property="og:site_name" content="CourtSide Padel Retreats" />
-		<meta property="og:locale" content={isSpanish ? "es_ES" : "en_GB"} />
-		<meta property="og:locale:alternate" content={isSpanish ? "en_GB" : "es_ES"} />
+		<meta property="og:locale" content={currentLocale} />
+		{alternateLocales.map((alt) => (
+			<meta property="og:locale:alternate" content={alt} />
+		))}
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image" />
@@ -102,7 +108,7 @@ const isSpanish = lang === "es";
 		>
 			Skip to main content
 		</a>
-		<Navbar client:load />
+		<Navbar hideLangToggle={hideLangToggle} client:load />
 		<slot />
 		<FooterIsland client:idle />
 	</body>

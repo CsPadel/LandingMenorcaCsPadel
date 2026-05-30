@@ -6,7 +6,11 @@ export const resources = {
   en: {
     translation: {
       navbar: {
-        home: "Home"
+        home: "Home",
+        includes: "Includes",
+        itinerary: "Itinerary",
+        book: "Book",
+        faq: "FAQ"
       },
       menorcaPage: {
         heroTitle: "MENORCA",
@@ -320,13 +324,30 @@ export const resources = {
             image: "/imagenes/Cala en porter.webp"
           }
         ]
+      },
+      legalNotice: {
+        notice: "This document is available in English only."
+      },
+      bookNow: {
+        eyebrow: "Limited places each season",
+        title: "Book Now",
+        subtitle: "Secure your place at the most exclusive padel retreat in the Mediterranean.",
+        labelDestination: "Destination",
+        labelDates: "Available Dates",
+        labelAccommodation: "Accommodation",
+        cta: "Secure Your Place →",
+        disclaimer: "No commitment required. Speak with your Personal Concierge first."
       }
     }
   },
   es: {
     translation: {
       navbar: {
-        home: "Inicio"
+        home: "Inicio",
+        includes: "Qué incluye",
+        itinerary: "Itinerario",
+        book: "Reservar",
+        faq: "FAQ"
       },
       menorcaPage: {
         heroTitle: "MENORCA",
@@ -640,13 +661,30 @@ export const resources = {
             image: "/imagenes/Cala en porter.webp"
           }
         ]
+      },
+      legalNotice: {
+        notice: "Este documento está disponible solo en inglés."
+      },
+      bookNow: {
+        eyebrow: "Plazas limitadas cada temporada",
+        title: "Reservar",
+        subtitle: "Asegura tu plaza en el retiro de pádel más exclusivo del Mediterráneo.",
+        labelDestination: "Destino",
+        labelDates: "Fechas Disponibles",
+        labelAccommodation: "Alojamiento",
+        cta: "Asegurar mi Plaza →",
+        disclaimer: "Sin compromiso. Habla primero con tu Concierge Personal."
       }
     }
   },
   fr: {
     translation: {
       navbar: {
-        home: "Accueil"
+        home: "Accueil",
+        includes: "Inclus",
+        itinerary: "Itinéraire",
+        book: "Réserver",
+        faq: "FAQ"
       },
       menorcaPage: {
         heroTitle: "MINORQUE",
@@ -960,6 +998,19 @@ export const resources = {
             image: "/imagenes/Cala en porter.webp"
           }
         ]
+      },
+      legalNotice: {
+        notice: "Ce document est uniquement disponible en anglais."
+      },
+      bookNow: {
+        eyebrow: "Places limitées chaque saison",
+        title: "Réserver",
+        subtitle: "Réservez votre place dans le séjour padel le plus exclusif de Méditerranée.",
+        labelDestination: "Destination",
+        labelDates: "Dates Disponibles",
+        labelAccommodation: "Hébergement",
+        cta: "Réserver ma Place →",
+        disclaimer: "Sans engagement. Parlez d'abord avec votre Concierge Personnel."
       }
     }
   }

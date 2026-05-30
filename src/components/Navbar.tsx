@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Menu, X } from './icons';
 import '../i18n/config';
 import LanguageToggle from './LanguageToggle';
 
-export default function Navbar() {
+interface NavbarProps {
+  hideLangToggle?: boolean;
+}
+
+export default function Navbar({ hideLangToggle = false }: Readonly<NavbarProps>) {
+  const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -12,6 +18,12 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  const navLinks = [
+    { href: '#includes', label: t('navbar.includes') },
+    { href: '#itinerary', label: t('navbar.itinerary') },
+    { href: '#rooms',    label: t('navbar.book') },
+  ];
 
   return (
     <>
@@ -45,11 +57,17 @@ export default function Navbar() {
           {/* Desktop right actions */}
           <div className="hidden md:flex items-center gap-8 z-50">
             <nav className="flex items-center gap-6">
-              <a href="#includes" className="nav-link text-sm tracking-widest uppercase font-medium text-brand-light/70 hover:text-brand-gold transition-colors">Includes</a>
-              <a href="#itinerary" className="nav-link text-sm tracking-widest uppercase font-medium text-brand-light/70 hover:text-brand-gold transition-colors">Itinerary</a>
-              <a href="#rooms" className="nav-link text-sm tracking-widest uppercase font-medium text-brand-light/70 hover:text-brand-gold transition-colors">Book</a>
+              {navLinks.map(({ href, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="nav-link text-sm tracking-widest uppercase font-medium text-brand-light/70 hover:text-brand-gold transition-colors"
+                >
+                  {label}
+                </a>
+              ))}
             </nav>
-            <LanguageToggle />
+            {!hideLangToggle && <LanguageToggle />}
           </div>
 
           {/* Mobile Hamburger toggle */}
@@ -68,14 +86,29 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-brand-dark flex flex-col items-center justify-center pt-24 pb-12 px-6">
           <div className="flex flex-col items-center gap-8 w-full max-w-sm">
-            <a href="#includes" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light text-white hover:text-brand-gold transition-colors">Includes</a>
-            <a href="#itinerary" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light text-white hover:text-brand-gold transition-colors">Itinerary</a>
-            <a href="#rooms" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light text-white hover:text-brand-gold transition-colors">Book</a>
-            <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl font-light text-white hover:text-brand-gold transition-colors">FAQ</a>
+            {navLinks.map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-2xl font-light text-white hover:text-brand-gold transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+            <a
+              href="#faq"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-2xl font-light text-white hover:text-brand-gold transition-colors"
+            >
+              {t('navbar.faq')}
+            </a>
             <div className="w-full h-px bg-brand-gold/20 my-4" />
-            <div className="scale-125 mt-4">
-              <LanguageToggle />
-            </div>
+            {!hideLangToggle && (
+              <div className="scale-125 mt-4">
+                <LanguageToggle />
+              </div>
+            )}
           </div>
         </div>
       )}

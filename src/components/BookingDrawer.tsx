@@ -11,12 +11,19 @@ import '../i18n/config';
 //   — JotForm will serve the correct language via ?lang= automatically.
 const JOTFORM_ID_EN = '261356602607051';
 const JOTFORM_ID_ES = '261356602607051'; // ← replace with the Spanish form ID
+type FormLang = 'en' | 'es';
+
+function resolveFormLang(i18nLang: string | undefined): FormLang {
+  if (i18nLang?.startsWith('es')) return 'es';
+  // TODO: i18n FR fallback — JotForm has no French form; FR visitors are served EN. // NOSONAR
+  return 'en';
+}
 
 export default function BookingDrawer() {
   const [isOpen, setIsOpen] = useState(false);
   const { i18n } = useTranslation();
-  const lang   = i18n.language?.startsWith('es') ? 'es' : 'en';
-  const formId = lang === 'es' ? JOTFORM_ID_ES : JOTFORM_ID_EN;
+  const lang    = resolveFormLang(i18n.language);
+  const formId  = lang === 'es' ? JOTFORM_ID_ES : JOTFORM_ID_EN;
   const formSrc = `https://form.jotform.com/${formId}${lang === 'es' && JOTFORM_ID_ES === JOTFORM_ID_EN ? '?lang=es' : ''}`;
 
   useEffect(() => {

@@ -8,6 +8,7 @@ import BespokeRetreats from '../components/BespokeRetreats';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import FAQ from '../components/FAQ';
 import BookingDrawer from '../components/BookingDrawer';
+import BookNowSection from '../components/BookNowSection';
 
 const SITE = "https://menorca.courtsidepadel.com";
 const seoTitle = "Menorca Padel Retreat 2026 | Luxury Padel Holiday Mediterranean | CourtSide";
@@ -164,52 +165,7 @@ const organizationSchema = {
     <FAQ theme="light" client:visible />
 
     <!-- ========== BOOK NOW CTA ========== -->
-    <section id="book" aria-label="Book your CourtSide Menorca padel retreat" class="relative py-28 md:py-40 px-6 md:px-16 overflow-hidden">
-      <img
-        src="/imagenes/IMG_2914.webp"
-        alt="Book your luxury Menorca padel retreat with CourtSide — limited places 2026"
-        class="absolute inset-0 w-full h-full object-cover"
-        loading="lazy"
-        decoding="async"
-        width="1200"
-        height="700"
-      />
-      <div class="absolute inset-0 bg-brand-dark/75 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-brand-dark/40"></div>
-
-      <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <p class="text-xs uppercase tracking-widest text-brand-gold mb-4 font-semibold">Limited places each season</p>
-        <h2 class="text-5xl md:text-7xl font-light text-brand-light mb-6 tracking-wide">Book Now</h2>
-        <p class="text-brand-light/70 text-xl mb-12 max-w-lg mx-auto">
-          Secure your place at the most exclusive padel retreat in the Mediterranean.
-        </p>
-
-        <!-- Quick booking summary -->
-        <div class="flex flex-col md:flex-row justify-center gap-0 mb-10 border border-white/20 max-w-2xl mx-auto">
-          <div class="flex-1 px-6 py-5 border-b md:border-b-0 md:border-r border-white/20 text-left">
-            <p class="text-xs uppercase tracking-widest text-brand-light/60 mb-1">Destination</p>
-            <p class="text-brand-light font-semibold text-lg">Menorca</p>
-          </div>
-          <div class="flex-1 px-6 py-5 border-b md:border-b-0 md:border-r border-white/20 text-left">
-            <p class="text-xs uppercase tracking-widest text-brand-light/60 mb-1">Available Dates</p>
-            <p class="text-brand-light font-semibold text-lg">30 Sep – 4 Oct 2026</p>
-          </div>
-          <div class="flex-1 px-6 py-5 text-left">
-            <p class="text-xs uppercase tracking-widest text-brand-light/60 mb-1">Accommodation</p>
-            <p class="text-brand-light font-semibold text-lg">Suite · Villa · Executive</p>
-          </div>
-        </div>
-
-        <button
-          onclick="globalThis.dispatchEvent(new Event('open-booking-drawer'))"
-          class="inline-flex items-center gap-3 px-12 py-5 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest text-sm hover:bg-brand-light transition-colors duration-300 cursor-pointer"
-          aria-label="Secure your place at CourtSide Menorca padel retreat 2026"
-        >
-          Secure Your Place →
-        </button>
-
-        <p class="text-brand-light/55 text-sm mt-6">No commitment required. Speak with your Personal Concierge first.</p>
-      </div>
-    </section>
+    <BookNowSection client:visible />
 
     <BookingDrawer client:load />
 
