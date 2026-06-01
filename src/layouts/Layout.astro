@@ -12,6 +12,7 @@ import '@fontsource/cormorant-garamond/latin-300-italic.css';
 import '@fontsource/cormorant-garamond/latin-400-italic.css';
 import Navbar from '../components/Navbar';
 import FooterIsland from '../components/FooterIsland';
+import CookieConsent from '../components/CookieConsent';
 
 interface Props {
 	title: string;
@@ -111,5 +112,6 @@ const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLoc
 		<Navbar hideLangToggle={hideLangToggle} client:load />
 		<slot />
 		<FooterIsland client:idle />
+		<CookieConsent client:load />
 	</body>
 </html>

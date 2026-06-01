@@ -337,6 +337,17 @@ export const resources = {
         labelAccommodation: "Accommodation",
         cta: "Secure Your Place →",
         disclaimer: "No commitment required. Speak with your Personal Concierge first."
+      },
+      notFound: {
+        error: "Error 404",
+        title: "Page Not Found",
+        message: "The page you are looking for does not exist or has been moved.",
+        backBtn: "Return to Homepage"
+      },
+      cookieConsent: {
+        message: "We use an essential cookie to remember your language preference.",
+        accept: "Got it",
+        learnMore: "Cookie Policy"
       }
     }
   },
@@ -674,6 +685,17 @@ export const resources = {
         labelAccommodation: "Alojamiento",
         cta: "Asegurar mi Plaza →",
         disclaimer: "Sin compromiso. Habla primero con tu Concierge Personal."
+      },
+      notFound: {
+        error: "Error 404",
+        title: "Página No Encontrada",
+        message: "La página que buscas no existe o ha sido movida.",
+        backBtn: "Volver al Inicio"
+      },
+      cookieConsent: {
+        message: "Usamos una cookie esencial para recordar tu preferencia de idioma.",
+        accept: "Entendido",
+        learnMore: "Política de Cookies"
       }
     }
   },
@@ -1011,6 +1033,17 @@ export const resources = {
         labelAccommodation: "Hébergement",
         cta: "Réserver ma Place →",
         disclaimer: "Sans engagement. Parlez d'abord avec votre Concierge Personnel."
+      },
+      notFound: {
+        error: "Erreur 404",
+        title: "Page Introuvable",
+        message: "La page que vous recherchez n'existe pas ou a été déplacée.",
+        backBtn: "Retour à l'Accueil"
+      },
+      cookieConsent: {
+        message: "Nous utilisons un cookie essentiel pour mémoriser votre préférence de langue.",
+        accept: "Compris",
+        learnMore: "Politique de Cookies"
       }
     }
   }
