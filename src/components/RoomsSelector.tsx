@@ -3,6 +3,8 @@ import { ArrowRight, Users } from './icons';
 import { useTranslation } from 'react-i18next';
 import '../i18n/config';
 
+const WHATSAPP_NUMBER = '447786694723';
+
 const CheckIcon = () => (
   <svg className="w-3.5 h-3.5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 16 16">
     <path d="M3 8l3.5 3.5L13 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -18,6 +20,9 @@ const images = [
 export default function RoomsSelector() {
   const { t } = useTranslation();
   const [active, setActive] = useState(0);
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    t('menorcaPage.rooms.talkToConciergeMessage'),
+  )}`;
 
   const amenities = t('menorcaPage.rooms.openRetreat.amenities', { returnObjects: true }) as string[];
 
@@ -157,15 +162,26 @@ export default function RoomsSelector() {
               </div>
             </div>
 
-            {/* CTA */}
-            <a
-              href="#book"
-              aria-label="Book Open Retreat at CourtSide Menorca"
-              className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
-            >
-              {t('menorcaPage.rooms.securePlace')}
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
-            </a>
+            {/* CTAs */}
+            <div className="space-y-3">
+              <a
+                href="#book"
+                aria-label="Book Open Retreat at CourtSide Menorca"
+                className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
+              >
+                {t('menorcaPage.rooms.securePlace')}
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
+              </a>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t('menorcaPage.rooms.talkToConcierge')}
+                className="flex items-center justify-center w-full py-3 rounded-2xl border border-white/15 text-white/55 text-sm font-medium tracking-wide hover:border-white/30 hover:text-white/80 transition-colors duration-150"
+              >
+                {t('menorcaPage.rooms.talkToConcierge')}
+              </a>
+            </div>
           </div>
 
         </div>

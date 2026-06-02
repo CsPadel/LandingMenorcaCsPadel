@@ -244,6 +244,8 @@ export const resources = {
           priceLabel: "Total Retreat Price",
           whatsIncluded: "What's included",
           securePlace: "Secure Your Place",
+          talkToConcierge: "Talk to a Concierge",
+          talkToConciergeMessage: "I need more information about the Menorca retreat",
           openRetreat: {
             name: "Open Retreat",
             tag: "Solo or Friends",
@@ -348,6 +350,20 @@ export const resources = {
         message: "We use an essential cookie to remember your language preference.",
         accept: "Got it",
         learnMore: "Cookie Policy"
+      },
+      bookingDrawer: {
+        eyebrow: "Limited places · 2026",
+        title: "Secure Your Place",
+        closeAria: "Close",
+        labelDestination: "Destination",
+        valueDestination: "Menorca, Spain",
+        labelDates: "Dates",
+        valueDates: "30 Sep – 4 Oct 2026",
+        labelFrom: "From",
+        valueFrom: "£1,750 per person",
+        iframeTitle: "Booking enquiry",
+        footerDisclaimer: "No commitment required. Handled per our",
+        privacyLink: "Privacy Policy"
       }
     }
   },
@@ -592,6 +608,8 @@ export const resources = {
           priceLabel: "Precio Total del Retiro",
           whatsIncluded: "Qué incluye",
           securePlace: "Asegurar mi Plaza",
+          talkToConcierge: "Hablar con un Concierge",
+          talkToConciergeMessage: "Necesito más información sobre el retiro de Menorca",
           openRetreat: {
             name: "Open Retreat",
             tag: "Solo o con amigos",
@@ -696,6 +714,20 @@ export const resources = {
         message: "Usamos una cookie esencial para recordar tu preferencia de idioma.",
         accept: "Entendido",
         learnMore: "Política de Cookies"
+      },
+      bookingDrawer: {
+        eyebrow: "Plazas limitadas · 2026",
+        title: "Asegura tu Plaza",
+        closeAria: "Cerrar",
+        labelDestination: "Destino",
+        valueDestination: "Menorca, España",
+        labelDates: "Fechas",
+        valueDates: "30 sep – 4 oct 2026",
+        labelFrom: "Desde",
+        valueFrom: "1.750 £ por persona",
+        iframeTitle: "Formulario de reserva",
+        footerDisclaimer: "Sin compromiso. Según nuestra",
+        privacyLink: "Política de Privacidad"
       }
     }
   },
@@ -940,6 +972,8 @@ export const resources = {
           priceLabel: "Prix Total du Séjour",
           whatsIncluded: "Ce qui est inclus",
           securePlace: "Réserver ma Place",
+          talkToConcierge: "Parler à un Concierge",
+          talkToConciergeMessage: "J'ai besoin de plus d'informations sur le séjour à Minorque",
           openRetreat: {
             name: "Séjour Ouvert",
             tag: "Solo ou entre Amis",
@@ -1044,6 +1078,20 @@ export const resources = {
         message: "Nous utilisons un cookie essentiel pour mémoriser votre préférence de langue.",
         accept: "Compris",
         learnMore: "Politique de Cookies"
+      },
+      bookingDrawer: {
+        eyebrow: "Places limitées · 2026",
+        title: "Réserver ma Place",
+        closeAria: "Fermer",
+        labelDestination: "Destination",
+        valueDestination: "Minorque, Espagne",
+        labelDates: "Dates",
+        valueDates: "30 sep – 4 oct 2026",
+        labelFrom: "À partir de",
+        valueFrom: "1 750 £ par personne",
+        iframeTitle: "Formulaire de réservation",
+        footerDisclaimer: "Sans engagement. Conformément à notre",
+        privacyLink: "Politique de confidentialité"
       }
     }
   }
