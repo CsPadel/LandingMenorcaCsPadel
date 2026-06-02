@@ -1,19 +1,28 @@
 import React, { useState } from 'react';
-import { ArrowRight, Users, Sparkles, ChevronLeft, ChevronRight, ChevronDown } from './icons';
+import { ArrowRight, Users } from './icons';
 import { useTranslation } from 'react-i18next';
 import '../i18n/config';
 
+const CheckIcon = () => (
+  <svg className="w-3.5 h-3.5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 16 16">
+    <path d="M3 8l3.5 3.5L13 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const images = [
+  '/imagenes/hotel-room-sea.jpg',
+  '/imagenes/hotel-terrace.jpg',
+  '/imagenes/hotel-pool-night.jpg',
+];
+
 export default function RoomsSelector() {
   const { t } = useTranslation();
-  const [activeImage, setActiveImage] = useState(0);
-  const [expandedIncluded, setExpandedIncluded] = useState(false);
-
-  const images = ['/imagenes/154A8505.webp', '/imagenes/154A8605.webp', '/imagenes/154A8631.webp'];
+  const [active, setActive] = useState(0);
 
   const amenities = t('menorcaPage.rooms.openRetreat.amenities', { returnObjects: true }) as string[];
 
-  const prevImage = () => setActiveImage((p) => (p - 1 + images.length) % images.length);
-  const nextImage = () => setActiveImage((p) => (p + 1) % images.length);
+  const prev = () => setActive((p) => (p - 1 + images.length) % images.length);
+  const next = () => setActive((p) => (p + 1) % images.length);
 
   return (
     <section
@@ -21,9 +30,13 @@ export default function RoomsSelector() {
       aria-label={t('menorcaPage.rooms.sectionTag')}
       className="bg-[#f7f5f2] py-24 md:py-32 px-4 md:px-16"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
+
         {/* Header */}
         <div className="text-center mb-14">
+          <p className="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold mb-3">
+            {t('menorcaPage.rooms.sectionTag')}
+          </p>
           <h2 className="text-4xl md:text-5xl font-light text-brand-dark tracking-wide">
             {t('menorcaPage.rooms.title')}
           </h2>
@@ -32,148 +45,129 @@ export default function RoomsSelector() {
           </p>
         </div>
 
-        {/* Main card */}
-        <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-dark/8">
-          <div className="flex flex-col lg:flex-row">
-            {/* Image panel */}
-            <div className="relative w-full lg:w-[55%] aspect-[4/3] lg:aspect-auto lg:min-h-[520px] overflow-hidden bg-brand-dark/10">
-              {images.map((img, iIdx) => (
-                <img
-                  key={img}
-                  src={img}
-                  alt={`Open Retreat — CourtSide Menorca`}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-200 will-change-[opacity] ${
-                    activeImage === iIdx ? 'opacity-100' : 'opacity-0'
+        {/* Card */}
+        <div className="grid lg:grid-cols-[58%_42%] rounded-3xl overflow-hidden shadow-2xl shadow-brand-dark/15">
+
+          {/* Image panel */}
+          <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[540px] overflow-hidden bg-brand-dark/10">
+            {images.map((src, i) => (
+              <img
+                key={src}
+                src={src}
+                alt="Barceló Nura — CourtSide Menorca"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                  active === i ? 'opacity-100' : 'opacity-0'
+                }`}
+                loading={i === 0 ? 'eager' : 'lazy'}
+                width={800}
+                height={600}
+              />
+            ))}
+
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 via-transparent to-transparent pointer-events-none" />
+
+            {/* Tag */}
+            <div className="absolute top-5 left-5 z-10">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-brand-gold text-brand-dark">
+                {t('menorcaPage.rooms.openRetreat.tag')}
+              </span>
+            </div>
+
+            {/* Arrows */}
+            <button
+              onClick={prev}
+              aria-label="Previous image"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm border border-white/25 flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={next}
+              aria-label="Next image"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm border border-white/25 flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Dots */}
+            <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-2 z-10">
+              {images.map((src, i) => (
+                <button
+                  key={src}
+                  onClick={() => setActive(i)}
+                  aria-label={`Photo ${i + 1}`}
+                  className={`transition-all duration-200 rounded-full ${
+                    active === i ? 'w-6 h-1.5 bg-brand-gold' : 'w-1.5 h-1.5 bg-white/50 hover:bg-white/80'
                   }`}
-                  loading={iIdx === 0 ? 'eager' : 'lazy'}
-                  width={800}
-                  height={600}
                 />
               ))}
+            </div>
+          </div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent pointer-events-none" />
+          {/* Info panel */}
+          <div className="flex flex-col bg-brand-dark px-8 py-10 md:px-10 md:py-12">
 
-              <div className="absolute top-5 left-5 z-10">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide backdrop-blur-sm bg-brand-gold text-brand-dark">
-                  <Sparkles className="w-3 h-3" />
-                  {t('menorcaPage.rooms.openRetreat.tag')}
+            {/* Name + capacity */}
+            <div className="mb-6">
+              <h3 className="text-2xl md:text-3xl font-light text-white leading-tight mb-2">
+                {t('menorcaPage.rooms.openRetreat.name')}
+              </h3>
+              <div className="flex items-center gap-2">
+                <Users className="w-3.5 h-3.5 text-brand-gold/70" />
+                <span className="text-xs text-white/45 uppercase tracking-widest">
+                  {t('menorcaPage.rooms.openRetreat.capacity')}
                 </span>
               </div>
+            </div>
 
-              <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 z-10 pointer-events-none">
-                <button
-                  onClick={prevImage}
-                  className="pointer-events-auto w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-150"
-                  aria-label="Previous image"
-                >
-                  <ChevronLeft className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={nextImage}
-                  className="pointer-events-auto w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/30 transition-colors duration-150"
-                  aria-label="Next image"
-                >
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
+            {/* Price block */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl px-5 py-4 mb-6">
+              <p className="text-xs text-white/40 uppercase tracking-widest mb-2">
+                {t('menorcaPage.rooms.priceLabel')}
+              </p>
+              <p className="text-white font-semibold text-sm leading-relaxed">
+                {t('menorcaPage.rooms.openRetreat.priceSingle')}
+              </p>
+              <p className="text-white/70 text-sm leading-relaxed">
+                {t('menorcaPage.rooms.openRetreat.priceShared')}
+              </p>
+            </div>
 
-              <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-0 z-10">
-                {images.map((img, iIdx) => (
-                  <button
-                    key={img}
-                    onClick={() => setActiveImage(iIdx)}
-                    className="w-[44px] h-[44px] flex items-center justify-center group"
-                    aria-label={`Open Retreat — photo ${iIdx + 1} of ${images.length}`}
-                  >
-                    <span className={`block transition-all duration-150 rounded-full ${
-                      activeImage === iIdx
-                        ? 'w-5 h-1.5 bg-brand-gold'
-                        : 'w-1.5 h-1.5 bg-white/50 group-hover:bg-white/80'
-                    }`} />
-                  </button>
+            {/* Description */}
+            <p className="text-white/55 text-sm leading-relaxed mb-7">
+              {t('menorcaPage.rooms.openRetreat.description')}
+            </p>
+
+            {/* What's included */}
+            <div className="mb-8 flex-1">
+              <p className="text-xs uppercase tracking-[0.2em] text-white/40 font-semibold mb-3">
+                {t('menorcaPage.rooms.whatsIncluded')}
+              </p>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                {Array.isArray(amenities) && amenities.map((a) => (
+                  <div key={a} className="flex items-start gap-2">
+                    <CheckIcon />
+                    <span className="text-white/70 text-xs leading-snug">{a}</span>
+                  </div>
                 ))}
               </div>
             </div>
 
-            {/* Info panel */}
-            <div className="flex flex-col justify-between p-8 md:p-10 lg:p-12 w-full lg:w-[45%]">
-              <div>
-                <div className="flex items-start justify-between gap-4 mb-6">
-                  <div>
-                    <h3 className="text-2xl md:text-3xl font-light text-brand-dark leading-tight">
-                      {t('menorcaPage.rooms.openRetreat.name')}
-                    </h3>
-                    <div className="flex items-center gap-2 mt-2">
-                      <Users className="w-3.5 h-3.5 text-brand-gold/70" />
-                      <span className="text-xs text-brand-dark/50 uppercase tracking-widest">
-                        {t('menorcaPage.rooms.openRetreat.capacity')}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="text-right flex-shrink-0">
-                    <p className="text-xs text-brand-dark/40 uppercase tracking-widest mb-1">
-                      {t('menorcaPage.rooms.priceLabel')}
-                    </p>
-                    <div className="flex flex-col items-end gap-1">
-                      <p className="text-sm font-semibold text-brand-dark">{t('menorcaPage.rooms.openRetreat.priceSingle')}</p>
-                      <p className="text-sm font-semibold text-brand-dark">{t('menorcaPage.rooms.openRetreat.priceShared')}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="h-px bg-brand-dark/8 mb-6" />
-
-                <p className="text-brand-dark/60 text-base leading-relaxed mb-8">
-                  {t('menorcaPage.rooms.openRetreat.description')}
-                </p>
-
-                <div className="mb-8">
-                  <button
-                    onClick={() => setExpandedIncluded((v) => !v)}
-                    className="w-full flex items-center justify-between py-2 group"
-                    aria-expanded={expandedIncluded}
-                  >
-                    <p className="text-xs uppercase tracking-[0.2em] text-brand-dark/60 font-semibold m-0 group-hover:text-brand-dark transition-colors">
-                      {t('menorcaPage.rooms.whatsIncluded')}
-                    </p>
-                    <ChevronDown
-                      className={`w-4 h-4 text-brand-dark/50 transition-all duration-200 group-hover:text-brand-dark ${
-                        expandedIncluded ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </button>
-
-                  <div
-                    className={`grid transition-all duration-300 ease-in-out ${
-                      expandedIncluded ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0'
-                    }`}
-                  >
-                    <div className="overflow-hidden">
-                      <div className="flex flex-wrap gap-2 pb-2">
-                        {Array.isArray(amenities) && amenities.map((a) => (
-                          <span
-                            key={a}
-                            className="px-3 py-1.5 rounded-full bg-[#f7f5f2] text-brand-dark/70 text-xs font-medium border border-brand-dark/8"
-                          >
-                            {a}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href="#book"
-                className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-dark text-white font-semibold text-sm uppercase tracking-widest hover:bg-brand-gold hover:text-brand-dark transition-colors duration-150 group"
-                aria-label="Book Open Retreat at CourtSide Menorca"
-              >
-                {t('menorcaPage.rooms.securePlace')}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
-              </a>
-            </div>
+            {/* CTA */}
+            <a
+              href="#book"
+              aria-label="Book Open Retreat at CourtSide Menorca"
+              className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
+            >
+              {t('menorcaPage.rooms.securePlace')}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
+            </a>
           </div>
+
         </div>
       </div>
     </section>

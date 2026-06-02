@@ -83,7 +83,7 @@ export const resources = {
                 time: 'Morning',
                 title: 'Arrival & Check-In',
                 desc: 'Private transfers from the airport to Barceló Nura. Welcome drinks on arrival and welcome packs in rooms.',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/EM-4.webp',
               },
               {
                 time: '14:00 – 16:30',
@@ -95,13 +95,13 @@ export const resources = {
                 time: '17:00 – 18:30',
                 title: 'Warm-Up Padel Session',
                 desc: 'Easy intro session at Padelin. Mixers to warm up the group in a relaxed, social format.',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/JOPS-721.webp',
               },
               {
                 time: '20:00',
                 title: 'Welcome Dinner',
                 desc: 'Opening dinner at Ses Forquilles restaurant in Mahón. Group reservation confirmed.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/restaurante-interior.jpg',
               },
             ],
           },
@@ -114,13 +114,13 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Breakfast — Barceló Nura',
                 desc: 'Group breakfast with reserved seating at the hotel. Fuel up before a full morning on court.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Padel Coaching & Matchplay',
                 desc: 'Court sessions at Padelin with coach-led drills and competitive matchplay.',
-                image: '/imagenes/EM-22.webp',
+                image: '/imagenes/EM-81.webp',
               },
               {
                 time: '13:45 – 17:30',
@@ -132,7 +132,7 @@ export const resources = {
                 time: '20:00',
                 title: 'Dinner — Hotel / Free Evening',
                 desc: 'Hotel meal included. Concierge available to assist with restaurant recommendations.',
-                image: '/imagenes/2313 copy.webp',
+                image: '/imagenes/restaurante-interior.jpg',
               },
             ],
           },
@@ -145,7 +145,7 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Breakfast — Barceló Nura',
                 desc: 'Group breakfast with reserved seating. Skill-grouped sessions briefed at the table.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:00 – 12:00',
@@ -163,7 +163,7 @@ export const resources = {
                 time: '20:00',
                 title: 'Dinner — La Calita',
                 desc: 'Dinner at La Calita restaurant. Hotel meal included.',
-                image: '/imagenes/2313 copy.webp',
+                image: '/imagenes/IMG_2914.webp',
               },
             ],
           },
@@ -176,19 +176,19 @@ export const resources = {
                 time: '07:30 – 08:15',
                 title: 'Early Breakfast — Barceló Nura',
                 desc: 'Tournament day starts early. Hydration packs ready and group seating reserved.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '09:00 – 13:00',
                 title: 'Padel Tournament — Padelin',
                 desc: 'Mixed doubles round-robin tournament at Padelin. Trophy and prizes confirmed with venue.',
-                image: '/imagenes/JOPS-1071.webp',
+                image: '/imagenes/EM-22.webp',
               },
               {
                 time: '13:00 – 14:30',
                 title: 'Tournament Lunch & Awards',
                 desc: 'On-site lunch at Padelin followed by the awards and trophy presentation ceremony.',
-                image: '/imagenes/2808 copy.webp',
+                image: '/imagenes/IMG_2167.webp',
               },
               {
                 time: '17:00 – 19:00',
@@ -207,19 +207,19 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Final Breakfast — Barceló Nura',
                 desc: 'Last group breakfast together. Luggage out by 11:00.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Optional Padel Session — Padelin',
                 desc: 'Casual open-court session for those whose flights allow. Entirely optional.',
-                image: '/imagenes/EM-81.webp',
+                image: '/imagenes/JOPS-1071.webp',
               },
               {
                 time: 'From 11:00',
                 title: 'Check-Out & Transfers to Airport',
                 desc: 'Private transfers per individual flight time. Late checkout available on request.',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/EM-4.webp',
               },
             ],
           }
@@ -307,21 +307,21 @@ export const resources = {
             role: "Senior Director, London",
             text: "Truly life-changing. The coaching sessions elevated my game, but the yacht day and gourmet dinners made it a complete luxury escape. Already booked for next year.",
             initials: "T",
-            image: "/imagenes/IMG_2167.webp"
+            image: "/imagenes/testimonio-tomasz.jpg"
           },
           {
             name: "Ana Martínez",
             role: "CEO, Madrid",
             text: "The attention to detail is unreal. From the airport transfer to the farewell dinner, every moment felt tailored. This is how a padel retreat should be.",
             initials: "A",
-            image: "/imagenes/JOPS-721.webp"
+            image: "/imagenes/testimonio-ana.jpg"
           },
           {
             name: "James Whitfield",
             role: "Managing Partner, Edinburgh",
             text: "I came for the padel and stayed for the experience. The vineyard lunch, the tournament day, the sunset at Cova d'en Xoroi — every single day was extraordinary.",
             initials: "J",
-            image: "/imagenes/Cala en porter.webp"
+            image: "/imagenes/testimonio-james.jpg"
           }
         ]
       },
@@ -431,7 +431,7 @@ export const resources = {
                 time: 'Mañana',
                 title: 'Llegada & Check-In',
                 desc: 'Traslados privados desde el aeropuerto al Barceló Nura. Bebidas de bienvenida y packs en las habitaciones.',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/EM-4.webp',
               },
               {
                 time: '14:00 – 16:30',
@@ -443,13 +443,13 @@ export const resources = {
                 time: '17:00 – 18:30',
                 title: 'Sesión de Pádel (Calentamiento)',
                 desc: 'Sesión introductoria en Padelin. Formato relajado y social para entrar en calor.',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/JOPS-721.webp',
               },
               {
                 time: '20:00',
                 title: 'Cena de Bienvenida',
                 desc: 'Cena de apertura en el restaurante Ses Forquilles en Mahón. Reserva de grupo confirmada.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/restaurante-interior.jpg',
               },
             ],
           },
@@ -462,13 +462,13 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Desayuno — Barceló Nura',
                 desc: 'Desayuno de grupo con zona reservada en el hotel para recargar energías.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Pádel (Entrenamiento y Partidos)',
                 desc: 'Sesiones en Padelin dirigidas por entrenadores y partidos competitivos.',
-                image: '/imagenes/EM-22.webp',
+                image: '/imagenes/EM-81.webp',
               },
               {
                 time: '13:45 – 17:30',
@@ -480,7 +480,7 @@ export const resources = {
                 time: '20:00',
                 title: 'Cena — Hotel / Tarde Libre',
                 desc: 'Cena en el hotel incluida. Concierge disponible para recomendar restaurantes.',
-                image: '/imagenes/2313 copy.webp',
+                image: '/imagenes/restaurante-interior.jpg',
               },
             ],
           },
@@ -493,7 +493,7 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Desayuno — Barceló Nura',
                 desc: 'Desayuno de grupo. Resumen de las sesiones por nivel durante el desayuno.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:00 – 12:00',
@@ -511,7 +511,7 @@ export const resources = {
                 time: '20:00',
                 title: 'Cena — La Calita',
                 desc: 'Cena en el restaurante La Calita. Menú incluido.',
-                image: '/imagenes/2313 copy.webp',
+                image: '/imagenes/IMG_2914.webp',
               },
             ],
           },
@@ -524,19 +524,19 @@ export const resources = {
                 time: '07:30 – 08:15',
                 title: 'Desayuno Temprano — Barceló Nura',
                 desc: 'El día del torneo empieza pronto. Packs de hidratación listos.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '09:00 – 13:00',
                 title: 'Torneo de Pádel — Padelin',
                 desc: 'Torneo round-robin de dobles mixtos en Padelin. Trofeo y premios confirmados.',
-                image: '/imagenes/JOPS-1071.webp',
+                image: '/imagenes/EM-22.webp',
               },
               {
                 time: '13:00 – 14:30',
                 title: 'Almuerzo & Entrega de Premios',
                 desc: 'Almuerzo en las instalaciones de Padelin seguido de la ceremonia de trofeos.',
-                image: '/imagenes/2808 copy.webp',
+                image: '/imagenes/IMG_2167.webp',
               },
               {
                 time: '17:00 – 19:00',
@@ -555,19 +555,19 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Desayuno Final — Barceló Nura',
                 desc: 'Último desayuno en grupo. Equipaje listo para las 11:00.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Sesión de Pádel Opcional — Padelin',
                 desc: 'Sesión informal en pista abierta para quienes sus vuelos lo permitan. Opcional.',
-                image: '/imagenes/EM-81.webp',
+                image: '/imagenes/JOPS-1071.webp',
               },
               {
                 time: 'Desde 11:00',
                 title: 'Check-Out & Traslados al Aeropuerto',
                 desc: 'Traslados privados según horario de vuelo. Late checkout bajo petición.',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/EM-4.webp',
               },
             ],
           }
@@ -655,21 +655,21 @@ export const resources = {
             role: "Director Senior, Londres",
             text: "Realmente me cambió la vida. Las sesiones de entrenamiento elevaron mi juego, pero el día en yate y las cenas gourmet lo convirtieron en un escape de lujo total. Ya he reservado para el próximo año.",
             initials: "T",
-            image: "/imagenes/IMG_2167.webp"
+            image: "/imagenes/testimonio-tomasz.jpg"
           },
           {
             name: "Ana Martínez",
             role: "CEO, Madrid",
             text: "La atención al detalle es irreal. Desde el traslado al aeropuerto hasta la cena de despedida, cada momento se sintió hecho a medida. Así es como debe ser un retiro de pádel.",
             initials: "A",
-            image: "/imagenes/JOPS-721.webp"
+            image: "/imagenes/testimonio-ana.jpg"
           },
           {
             name: "James Whitfield",
             role: "Socio Director, Edimburgo",
             text: "Vine por el pádel y me quedé por la experiencia. El almuerzo en el viñedo, el día del torneo, el atardecer en Cova d'en Xoroi — cada uno de los días fue extraordinario.",
             initials: "J",
-            image: "/imagenes/Cala en porter.webp"
+            image: "/imagenes/testimonio-james.jpg"
           }
         ]
       },
@@ -779,7 +779,7 @@ export const resources = {
                 time: 'Matin',
                 title: 'Arrivée & Check-In',
                 desc: 'Transferts privés depuis l\'aéroport au Barceló Nura. Boissons de bienvenue à l\'arrivée et packs dans les chambres.',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/EM-4.webp',
               },
               {
                 time: '14:00 – 16:30',
@@ -791,13 +791,13 @@ export const resources = {
                 time: '17:00 – 18:30',
                 title: 'Session de Padel d\'Échauffement',
                 desc: 'Session introductive à Padelin. Format détendu et convivial pour mettre le groupe en jambes.',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/JOPS-721.webp',
               },
               {
                 time: '20:00',
                 title: 'Dîner de Bienvenue',
                 desc: 'Dîner d\'ouverture au restaurant Ses Forquilles à Mahón. Réservation de groupe confirmée.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/restaurante-interior.jpg',
               },
             ],
           },
@@ -810,13 +810,13 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Petit-Déjeuner — Barceló Nura',
                 desc: 'Petit-déjeuner de groupe avec places réservées à l\'hôtel. Se préparer avant une matinée complète sur le court.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Coaching Padel & Matchs',
                 desc: 'Sessions sur le court à Padelin avec exercices dirigés par des coachs et matchs compétitifs.',
-                image: '/imagenes/EM-22.webp',
+                image: '/imagenes/EM-81.webp',
               },
               {
                 time: '13:45 – 17:30',
@@ -828,7 +828,7 @@ export const resources = {
                 time: '20:00',
                 title: 'Dîner — Hôtel / Soirée Libre',
                 desc: 'Repas à l\'hôtel inclus. Le concierge est disponible pour des recommandations de restaurants.',
-                image: '/imagenes/2313 copy.webp',
+                image: '/imagenes/restaurante-interior.jpg',
               },
             ],
           },
@@ -841,7 +841,7 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Petit-Déjeuner — Barceló Nura',
                 desc: 'Petit-déjeuner de groupe. Sessions par groupes de niveau présentées pendant le repas.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:00 – 12:00',
@@ -859,7 +859,7 @@ export const resources = {
                 time: '20:00',
                 title: 'Dîner — La Calita',
                 desc: 'Dîner au restaurant La Calita. Repas inclus.',
-                image: '/imagenes/2313 copy.webp',
+                image: '/imagenes/IMG_2914.webp',
               },
             ],
           },
@@ -872,19 +872,19 @@ export const resources = {
                 time: '07:30 – 08:15',
                 title: 'Petit-Déjeuner Matinal — Barceló Nura',
                 desc: 'La journée du tournoi commence tôt. Packs d\'hydratation prêts et places de groupe réservées.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '09:00 – 13:00',
                 title: 'Tournoi de Padel — Padelin',
                 desc: 'Tournoi round-robin en double mixte à Padelin. Trophée et prix confirmés avec le lieu.',
-                image: '/imagenes/JOPS-1071.webp',
+                image: '/imagenes/EM-22.webp',
               },
               {
                 time: '13:00 – 14:30',
                 title: 'Déjeuner du Tournoi & Remise des Prix',
                 desc: 'Déjeuner sur place à Padelin suivi de la cérémonie de remise des prix et du trophée.',
-                image: '/imagenes/2808 copy.webp',
+                image: '/imagenes/IMG_2167.webp',
               },
               {
                 time: '17:00 – 19:00',
@@ -903,19 +903,19 @@ export const resources = {
                 time: '08:30 – 09:15',
                 title: 'Dernier Petit-Déjeuner — Barceló Nura',
                 desc: 'Dernier petit-déjeuner de groupe. Bagages à sortir avant 11h00.',
-                image: '/imagenes/bambu.webp',
+                image: '/imagenes/hotel-terrace.jpg',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Session de Padel Optionnelle — Padelin',
                 desc: 'Session décontractée en court libre pour ceux dont les vols le permettent. Entièrement optionnelle.',
-                image: '/imagenes/EM-81.webp',
+                image: '/imagenes/JOPS-1071.webp',
               },
               {
                 time: 'Dès 11:00',
                 title: 'Check-Out & Transferts vers l\'Aéroport',
                 desc: 'Transferts privés selon l\'heure de vol individuelle. Départ tardif disponible sur demande.',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/EM-4.webp',
               },
             ],
           }
@@ -1003,21 +1003,21 @@ export const resources = {
             role: "Directeur Senior, Londres",
             text: "Vraiment bouleversant. Les sessions de coaching ont élevé mon jeu, mais la journée en yacht et les dîners gastronomiques en ont fait une escapade de luxe complète. Déjà réservé pour l'année prochaine.",
             initials: "T",
-            image: "/imagenes/IMG_2167.webp"
+            image: "/imagenes/testimonio-tomasz.jpg"
           },
           {
             name: "Ana Martínez",
             role: "PDG, Madrid",
             text: "L'attention aux détails est incroyable. Du transfert aéroport au dîner d'adieu, chaque moment semblait taillé sur mesure. C'est ainsi que doit être un séjour padel.",
             initials: "A",
-            image: "/imagenes/JOPS-721.webp"
+            image: "/imagenes/testimonio-ana.jpg"
           },
           {
             name: "James Whitfield",
             role: "Associé Directeur, Édimbourg",
             text: "Je suis venu pour le padel et je suis resté pour l'expérience. Le déjeuner au vignoble, la journée du tournoi, le coucher de soleil à la Cova d'en Xoroi — chaque journée était extraordinaire.",
             initials: "J",
-            image: "/imagenes/Cala en porter.webp"
+            image: "/imagenes/testimonio-james.jpg"
           }
         ]
       },

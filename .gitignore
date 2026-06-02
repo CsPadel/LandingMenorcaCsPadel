@@ -20,3 +20,7 @@ pnpm-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# Source photo archives (not needed in repo)
+public/Menorca Retreat Pics/
+public/imagenes-nuevas/
