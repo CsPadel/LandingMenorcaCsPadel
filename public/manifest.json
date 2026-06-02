@@ -9,15 +9,10 @@
   "lang": "en",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
+      "src": "/images-solicitadas/blue-favicon.png",
+      "type": "image/png",
+      "sizes": "211x316",
       "purpose": "any maskable"
-    },
-    {
-      "src": "/favicon.ico",
-      "type": "image/x-icon",
-      "sizes": "48x48"
     }
   ]
 }

@@ -4,27 +4,28 @@ import { X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import '../i18n/config';
 
-// ── JotForm IDs ───────────────────────────────────────────────────────────────
-// Option A (recommended): create a Spanish version of the form in JotForm,
-//   paste the new form ID below as JOTFORM_ID_ES.
-// Option B: use JotForm's built-in multilingual feature and keep both IDs equal
-//   — JotForm will serve the correct language via ?lang= automatically.
-const JOTFORM_ID_EN = '261356602607051';
-const JOTFORM_ID_ES = '261356602607051'; // ← replace with the Spanish form ID
-type FormLang = 'en' | 'es';
+// Single multilingual form (Option B). Language is forced via ?language= on every load.
+// Hide JotForm's language picker in Form Designer → Styles → Inject Custom CSS:
+//   .language-dd { display: none !important; }
+const JOTFORM_ID = '261356602607051';
+// Codes must match JotForm multilingual setup (EN is "English (UK)" → en-UK).
+type JotformLanguage = 'es' | 'en-UK' | 'fr';
 
-function resolveFormLang(i18nLang: string | undefined): FormLang {
+function resolveJotformLanguage(i18nLang: string | undefined): JotformLanguage {
   if (i18nLang?.startsWith('es')) return 'es';
-  // TODO: i18n FR fallback — JotForm has no French form; FR visitors are served EN. // NOSONAR
-  return 'en';
+  if (i18nLang?.startsWith('fr')) return 'fr';
+  return 'en-UK';
+}
+
+function buildFormSrc(formId: string, language: JotformLanguage): string {
+  return `https://form.jotform.com/${formId}?language=${language}`;
 }
 
 export default function BookingDrawer() {
   const [isOpen, setIsOpen] = useState(false);
-  const { i18n } = useTranslation();
-  const lang    = resolveFormLang(i18n.language);
-  const formId  = lang === 'es' ? JOTFORM_ID_ES : JOTFORM_ID_EN;
-  const formSrc = `https://form.jotform.com/${formId}${lang === 'es' && JOTFORM_ID_ES === JOTFORM_ID_EN ? '?lang=es' : ''}`;
+  const { t, i18n } = useTranslation();
+  const jotformLang = resolveJotformLanguage(i18n.language);
+  const formSrc = buildFormSrc(JOTFORM_ID, jotformLang);
 
   useEffect(() => {
     const open = () => setIsOpen(true);
@@ -60,16 +61,16 @@ export default function BookingDrawer() {
             <div className="flex items-start justify-between px-8 pt-9 pb-5 flex-shrink-0">
               <div>
                 <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-semibold mb-2">
-                  Limited places · 2026
+                  {t('bookingDrawer.eyebrow')}
                 </p>
                 <h2 className="text-[28px] font-light text-brand-light tracking-wide leading-tight">
-                  Secure Your Place
+                  {t('bookingDrawer.title')}
                 </h2>
               </div>
               <button
                 onClick={close}
                 className="mt-1 text-brand-light/25 hover:text-brand-light/60 transition-colors p-2 -mr-2"
-                aria-label="Close"
+                aria-label={t('bookingDrawer.closeAria')}
               >
                 <X className="w-5 h-5" />
               </button>
@@ -80,35 +81,47 @@ export default function BookingDrawer() {
             {/* Context strip */}
             <div className="mx-8 mb-6 border border-white/10 divide-y divide-white/8 flex-shrink-0">
               <div className="flex justify-between items-center px-5 py-3">
-                <span className="text-[10px] uppercase tracking-widest text-brand-light/35">Destination</span>
-                <span className="text-sm text-brand-light font-medium">Menorca, Spain</span>
+                <span className="text-[10px] uppercase tracking-widest text-brand-light/35">
+                  {t('bookingDrawer.labelDestination')}
+                </span>
+                <span className="text-sm text-brand-light font-medium">
+                  {t('bookingDrawer.valueDestination')}
+                </span>
               </div>
               <div className="flex justify-between items-center px-5 py-3">
-                <span className="text-[10px] uppercase tracking-widest text-brand-light/35">Dates</span>
-                <span className="text-sm text-brand-light font-medium">30 Sep – 4 Oct 2026</span>
+                <span className="text-[10px] uppercase tracking-widest text-brand-light/35">
+                  {t('bookingDrawer.labelDates')}
+                </span>
+                <span className="text-sm text-brand-light font-medium">
+                  {t('bookingDrawer.valueDates')}
+                </span>
               </div>
               <div className="flex justify-between items-center px-5 py-3">
-                <span className="text-[10px] uppercase tracking-widest text-brand-light/35">From</span>
-                <span className="text-sm text-brand-light font-medium">£1,750 per person</span>
+                <span className="text-[10px] uppercase tracking-widest text-brand-light/35">
+                  {t('bookingDrawer.labelFrom')}
+                </span>
+                <span className="text-sm text-brand-light font-medium">
+                  {t('bookingDrawer.valueFrom')}
+                </span>
               </div>
             </div>
 
-            {/* JotForm iframe */}
-            <div className="mx-8 flex-1 bg-white overflow-hidden mb-6">
+            {/* JotForm iframe — min-h-0 lets flex-1 shrink so scroll works inside the iframe */}
+            <div className="mx-8 mb-6 min-h-0 flex-1 overflow-auto bg-white">
               <iframe
                 key={formSrc}
-                title={lang === 'es' ? 'Formulario de reserva' : 'Booking enquiry'}
+                title={t('bookingDrawer.iframeTitle')}
                 allow="geolocation; microphone; camera; fullscreen; payment"
                 src={formSrc}
-                style={{ width: '100%', height: '100%', minHeight: '480px', border: 'none', display: 'block' }}
+                className="block h-full min-h-[320px] w-full border-0"
               />
             </div>
 
             {/* Footer */}
             <p className="text-brand-light/20 text-[11px] text-center px-8 pb-6 flex-shrink-0">
-              No commitment required. Handled per our{' '}
+              {t('bookingDrawer.footerDisclaimer')}{' '}
               <a href="/legal/privacy-policy" className="underline hover:text-brand-gold transition-colors">
-                Privacy Policy
+                {t('bookingDrawer.privacyLink')}
               </a>.
             </p>
           </motion.div>
