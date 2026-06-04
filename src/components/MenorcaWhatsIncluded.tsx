@@ -7,20 +7,20 @@ export default function MenorcaWhatsIncluded() {
 
   const pillars = [
     {
-      image: '/images-solicitadas/Elite coaching.webp',
+      image: '/imagenes/EM-81.jpg',
       alt: 'Elite padel coaching session at Padelin, Menorca',
     },
     {
-      image: '/images-solicitadas/Hotel pic1.webp',
+      image: '/imagenes/hotel-pool-night.jpg',
       alt: 'Luxury stay at Barceló Nura, Menorca',
     },
     {
-      image: '/images-solicitadas/Restaurant pic 1.webp',
-      alt: 'Fine dining and curated culinary journey in Menorca',
+      image: '/imagenes/sa punta.jpg',
+      alt: 'Fine dining with sea views in Menorca',
     },
     {
-      image: '/imagenes/Cala en porter.jpg',
-      alt: 'Unforgettable island adventures in Menorca — turquoise cala',
+      image: '/imagenes/boat-tour.jpg',
+      alt: 'Private boat tour and island adventures in Menorca',
     },
   ];
 
