@@ -50,7 +50,7 @@ export default function TestimonialsCarousel() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.45, ease: 'easeOut' }}
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover object-top"
                 loading="lazy"
                 decoding="async"
                 width={700}

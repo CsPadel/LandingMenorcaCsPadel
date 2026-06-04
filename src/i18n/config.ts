@@ -82,17 +82,17 @@ export const resources = {
               {
                 time: 'Morning',
                 title: 'Arrival & Check-In',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/EM-4.jpg',
               },
               {
                 time: '14:00 – 16:30',
                 title: 'Seaside Lunch',
-                image: '/imagenes/Cala en porter.webp',
+                image: '/imagenes/Cala en porter.jpg',
               },
               {
                 time: '17:00 – 18:30',
                 title: 'Warm-Up Padel Session',
-                image: '/imagenes/JOPS-721.webp',
+                image: '/imagenes/JOPS-721.JPG',
               },
               {
                 time: '20:00',
@@ -114,12 +114,12 @@ export const resources = {
               {
                 time: '10:00 – 12:00',
                 title: 'Padel Coaching & Matchplay',
-                image: '/imagenes/EM-81.webp',
+                image: '/imagenes/EM-81.jpg',
               },
               {
                 time: '13:45 – 17:30',
                 title: 'Lunch & Boat Tour',
-                image: '/imagenes/sa punta.webp',
+                image: '/imagenes/sa punta.jpg',
               },
               {
                 time: '20:00',
@@ -141,17 +141,17 @@ export const resources = {
               {
                 time: '10:00 – 12:00',
                 title: 'Padel Coaching & Matches',
-                image: '/imagenes/EM-53.webp',
+                image: '/imagenes/EM-53.jpg',
               },
               {
                 time: '13:30 – 16:30',
                 title: 'Vineyard Tour & Lunch',
-                image: '/imagenes/binifadet.webp',
+                image: '/imagenes/vinedo-binifadet.jpg',
               },
               {
                 time: '20:00',
                 title: 'Group Dinner',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/IMG_2914.JPG',
               },
             ],
           },
@@ -168,17 +168,17 @@ export const resources = {
               {
                 time: '09:00 – 13:00',
                 title: 'Padel Tournament',
-                image: '/imagenes/EM-22.webp',
+                image: '/imagenes/EM-22.jpg',
               },
               {
                 time: '13:00 – 14:30',
                 title: 'Tournament Lunch & Awards',
-                image: '/imagenes/IMG_2167.webp',
+                image: '/imagenes/IMG_2167.jpeg',
               },
               {
                 time: '17:00 – 19:00',
                 title: "Sunset & Tapas — Cova d'en Xoroi",
-                image: '/imagenes/cap roig.webp',
+                image: '/imagenes/cap roig.jpg',
               },
             ],
           },
@@ -195,12 +195,12 @@ export const resources = {
               {
                 time: '10:30 – 13:00',
                 title: 'Optional Padel Session — Padelin',
-                image: '/imagenes/JOPS-1071.webp',
+                image: '/imagenes/JOPS-1071.JPG',
               },
               {
                 time: 'From 11:00',
                 title: 'Check-Out & Transfers to Airport',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/EM-4.jpg',
               },
             ],
           }
@@ -289,21 +289,21 @@ export const resources = {
             role: "Partner",
             text: "The entire experience was incredibly well thought out from start to finish. The padel coaching was excellent and tailored to different levels, while the off-court activities gave us a chance to experience Menorca beyond the court. The accommodation, restaurants, and private transport were all first-class, making the trip completely stress-free.",
             initials: "J",
-            image: "/imagenes/testimonio-tomasz.jpg"
+            image: "/imagenes/testimonio-jean.jpg"
           },
           {
             name: "Nicolas Maurer",
             role: "Founder",
             text: "What stood out most was the attention to detail. Everything was seamlessly organized, from airport transfers to restaurant reservations and daily activities. The balance between quality padel sessions and time to enjoy the island's tranquility was perfect. It felt like a premium experience without ever feeling overly structured.",
             initials: "N",
-            image: "/imagenes/testimonio-ana.jpg"
+            image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
             name: "Anatole Levy",
             role: "CEO",
             text: "The combination of great coaching, beautiful surroundings, and exceptional hospitality made this a memorable trip. Every aspect of the retreat was carefully curated, from the accommodation and local dining experiences to the boat excursion and private transportation. It was the ideal mix of sport, relaxation, and discovering Menorca.",
             initials: "A",
-            image: "/imagenes/testimonio-james.jpg"
+            image: "/imagenes/testimonio-anatole.jpg"
           }
         ]
       },
@@ -429,17 +429,17 @@ export const resources = {
               {
                 time: 'Mañana',
                 title: 'Llegada & Check-In',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/EM-4.jpg',
               },
               {
                 time: '14:00 – 16:30',
                 title: 'Almuerzo frente al mar',
-                image: '/imagenes/Cala en porter.webp',
+                image: '/imagenes/Cala en porter.jpg',
               },
               {
                 time: '17:00 – 18:30',
                 title: 'Sesión de Pádel (Calentamiento)',
-                image: '/imagenes/JOPS-721.webp',
+                image: '/imagenes/JOPS-721.JPG',
               },
               {
                 time: '20:00',
@@ -461,12 +461,12 @@ export const resources = {
               {
                 time: '10:00 – 12:00',
                 title: 'Pádel (Entrenamiento y Partidos)',
-                image: '/imagenes/EM-81.webp',
+                image: '/imagenes/EM-81.jpg',
               },
               {
                 time: '13:45 – 17:30',
                 title: 'Almuerzo y Paseo en Barco',
-                image: '/imagenes/sa punta.webp',
+                image: '/imagenes/sa punta.jpg',
               },
               {
                 time: '20:00',
@@ -488,17 +488,17 @@ export const resources = {
               {
                 time: '10:00 – 12:00',
                 title: 'Pádel (Técnica y Partidos)',
-                image: '/imagenes/EM-53.webp',
+                image: '/imagenes/EM-53.jpg',
               },
               {
                 time: '13:30 – 16:30',
                 title: 'Visita a Viñedo y Almuerzo',
-                image: '/imagenes/binifadet.webp',
+                image: '/imagenes/vinedo-binifadet.jpg',
               },
               {
                 time: '20:00',
                 title: 'Cena de Grupo',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/IMG_2914.JPG',
               },
             ],
           },
@@ -515,17 +515,17 @@ export const resources = {
               {
                 time: '09:00 – 13:00',
                 title: 'Torneo de Pádel',
-                image: '/imagenes/EM-22.webp',
+                image: '/imagenes/EM-22.jpg',
               },
               {
                 time: '13:00 – 14:30',
                 title: 'Almuerzo & Entrega de Premios',
-                image: '/imagenes/IMG_2167.webp',
+                image: '/imagenes/IMG_2167.jpeg',
               },
               {
                 time: '17:00 – 19:00',
                 title: "Atardecer & Tapas — Cova d'en Xoroi",
-                image: '/imagenes/cap roig.webp',
+                image: '/imagenes/cap roig.jpg',
               },
             ],
           },
@@ -542,12 +542,12 @@ export const resources = {
               {
                 time: '10:30 – 13:00',
                 title: 'Sesión de Pádel Opcional — Padelin',
-                image: '/imagenes/JOPS-1071.webp',
+                image: '/imagenes/JOPS-1071.JPG',
               },
               {
                 time: 'Desde 11:00',
                 title: 'Check-Out & Traslados al Aeropuerto',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/EM-4.jpg',
               },
             ],
           }
@@ -636,21 +636,21 @@ export const resources = {
             role: "Partner",
             text: "Toda la experiencia estuvo increíblemente bien pensada de principio a fin. El entrenamiento de pádel fue excelente y adaptado a distintos niveles, mientras que las actividades fuera de la pista nos permitieron conocer Menorca más allá de la cancha. El alojamiento, los restaurantes y el transporte privado fueron de primera clase, lo que hizo el viaje completamente libre de estrés.",
             initials: "J",
-            image: "/imagenes/testimonio-tomasz.jpg"
+            image: "/imagenes/testimonio-jean.jpg"
           },
           {
             name: "Nicolas Maurer",
             role: "Founder",
             text: "Lo que más destacó fue la atención al detalle. Todo estuvo organizado a la perfección, desde los traslados al aeropuerto hasta las reservas en restaurantes y las actividades diarias. El equilibrio entre sesiones de pádel de calidad y tiempo para disfrutar de la tranquilidad de la isla fue perfecto. Se sintió como una experiencia premium sin resultar nunca demasiado estructurada.",
             initials: "N",
-            image: "/imagenes/testimonio-ana.jpg"
+            image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
             name: "Anatole Levy",
             role: "CEO",
             text: "La combinación de un gran entrenamiento, un entorno precioso y una hospitalidad excepcional hizo de este un viaje memorable. Cada aspecto del retiro estuvo cuidadosamente seleccionado, desde el alojamiento y las experiencias gastronómicas locales hasta la excursión en barco y el transporte privado. Fue la mezcla ideal de deporte, relax y descubrir Menorca.",
             initials: "A",
-            image: "/imagenes/testimonio-james.jpg"
+            image: "/imagenes/testimonio-anatole.jpg"
           }
         ]
       },
@@ -776,17 +776,17 @@ export const resources = {
               {
                 time: 'Matin',
                 title: 'Arrivée & Check-In',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/EM-4.jpg',
               },
               {
                 time: '14:00 – 16:30',
                 title: 'Déjeuner en Bord de Mer',
-                image: '/imagenes/Cala en porter.webp',
+                image: '/imagenes/Cala en porter.jpg',
               },
               {
                 time: '17:00 – 18:30',
                 title: 'Session de Padel d\'Échauffement',
-                image: '/imagenes/JOPS-721.webp',
+                image: '/imagenes/JOPS-721.JPG',
               },
               {
                 time: '20:00',
@@ -808,12 +808,12 @@ export const resources = {
               {
                 time: '10:00 – 12:00',
                 title: 'Coaching Padel & Matchs',
-                image: '/imagenes/EM-81.webp',
+                image: '/imagenes/EM-81.jpg',
               },
               {
                 time: '13:45 – 17:30',
                 title: 'Déjeuner & Tour en Bateau',
-                image: '/imagenes/sa punta.webp',
+                image: '/imagenes/sa punta.jpg',
               },
               {
                 time: '20:00',
@@ -835,17 +835,17 @@ export const resources = {
               {
                 time: '10:00 – 12:00',
                 title: 'Coaching Padel & Matchs',
-                image: '/imagenes/EM-53.webp',
+                image: '/imagenes/EM-53.jpg',
               },
               {
                 time: '13:30 – 16:30',
                 title: 'Visite du Vignoble & Déjeuner',
-                image: '/imagenes/binifadet.webp',
+                image: '/imagenes/vinedo-binifadet.jpg',
               },
               {
                 time: '20:00',
                 title: 'Dîner de Groupe',
-                image: '/imagenes/IMG_2914.webp',
+                image: '/imagenes/IMG_2914.JPG',
               },
             ],
           },
@@ -862,17 +862,17 @@ export const resources = {
               {
                 time: '09:00 – 13:00',
                 title: 'Tournoi de Padel',
-                image: '/imagenes/EM-22.webp',
+                image: '/imagenes/EM-22.jpg',
               },
               {
                 time: '13:00 – 14:30',
                 title: 'Déjeuner du Tournoi & Remise des Prix',
-                image: '/imagenes/IMG_2167.webp',
+                image: '/imagenes/IMG_2167.jpeg',
               },
               {
                 time: '17:00 – 19:00',
                 title: "Coucher de Soleil & Tapas — Cova d'en Xoroi",
-                image: '/imagenes/cap roig.webp',
+                image: '/imagenes/cap roig.jpg',
               },
             ],
           },
@@ -889,12 +889,12 @@ export const resources = {
               {
                 time: '10:30 – 13:00',
                 title: 'Session de Padel Optionnelle — Padelin',
-                image: '/imagenes/JOPS-1071.webp',
+                image: '/imagenes/JOPS-1071.JPG',
               },
               {
                 time: 'Dès 11:00',
                 title: 'Check-Out & Transferts vers l\'Aéroport',
-                image: '/imagenes/EM-4.webp',
+                image: '/imagenes/EM-4.jpg',
               },
             ],
           }
@@ -983,21 +983,21 @@ export const resources = {
             role: "Partner",
             text: "L'ensemble de l'expérience était incroyablement bien pensé du début à la fin. Le coaching padel était excellent et adapté aux différents niveaux, tandis que les activités hors court nous ont permis de découvrir Minorque au-delà du terrain. L'hébergement, les restaurants et le transport privé étaient tous de première classe, rendant le voyage totalement sans stress.",
             initials: "J",
-            image: "/imagenes/testimonio-tomasz.jpg"
+            image: "/imagenes/testimonio-jean.jpg"
           },
           {
             name: "Nicolas Maurer",
             role: "Founder",
             text: "Ce qui m'a le plus marqué, c'est l'attention aux détails. Tout était organisé de façon fluide, des transferts aéroport aux réservations de restaurants en passant par les activités quotidiennes. L'équilibre entre des sessions de padel de qualité et le temps pour profiter de la tranquillité de l'île était parfait. On avait l'impression d'une expérience premium sans jamais se sentir trop encadré.",
             initials: "N",
-            image: "/imagenes/testimonio-ana.jpg"
+            image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
             name: "Anatole Levy",
             role: "CEO",
             text: "La combinaison d'un excellent coaching, de cadres magnifiques et d'une hospitalité exceptionnelle a fait de ce séjour un voyage mémorable. Chaque aspect du retreat était soigneusement sélectionné, de l'hébergement et les expériences gastronomiques locales à l'excursion en bateau et au transport privé. C'était le mix idéal entre sport, détente et découverte de Minorque.",
             initials: "A",
-            image: "/imagenes/testimonio-james.jpg"
+            image: "/imagenes/testimonio-anatole.jpg"
           }
         ]
       },

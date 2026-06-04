@@ -12,9 +12,11 @@ const CheckIcon = () => (
 );
 
 const images = [
-  '/imagenes/hotel-room-sea.jpg',
-  '/imagenes/hotel-terrace.jpg',
   '/imagenes/hotel-pool-night.jpg',
+  '/imagenes/hotel-room-sea.jpg',
+  '/imagenes/hotel-spa.jpg',
+  '/imagenes/hotel-bar.jpg',
+  '/imagenes/hotel-pool-day.jpg',
 ];
 
 export default function RoomsSelector() {

@@ -19,8 +19,8 @@ export default function MenorcaWhatsIncluded() {
       alt: 'Fine dining and curated culinary journey in Menorca',
     },
     {
-      image: '/images-solicitadas/Adventure pic 2 (prefered one).webp',
-      alt: 'Unforgettable island adventures in Menorca',
+      image: '/imagenes/Cala en porter.jpg',
+      alt: 'Unforgettable island adventures in Menorca — turquoise cala',
     },
   ];
 
