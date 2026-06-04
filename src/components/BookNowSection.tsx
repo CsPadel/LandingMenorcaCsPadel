@@ -2,8 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../i18n/config';
 
+const WHATSAPP_NUMBER = '447786694723';
+
 export default function BookNowSection() {
   const { t } = useTranslation();
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    t('menorcaPage.rooms.talkToConciergeMessage'),
+  )}`;
 
   return (
     <section
@@ -38,7 +43,7 @@ export default function BookNowSection() {
             <p className="text-xs uppercase tracking-widest text-brand-light/60 mb-1">
               {t('bookNow.labelDestination')}
             </p>
-            <p className="text-brand-light font-semibold text-lg">Menorca</p>
+            <p className="text-brand-light font-semibold text-lg">{t('bookNow.valueDestination')}</p>
           </div>
           <div className="flex-1 px-6 py-5 border-b md:border-b-0 md:border-r border-white/20 text-left">
             <p className="text-xs uppercase tracking-widest text-brand-light/60 mb-1">
@@ -50,17 +55,29 @@ export default function BookNowSection() {
             <p className="text-xs uppercase tracking-widest text-brand-light/60 mb-1">
               {t('bookNow.labelAccommodation')}
             </p>
-            <p className="text-brand-light font-semibold text-lg">Suite · Villa · Executive</p>
+            <p className="text-brand-light font-semibold text-lg">{t('bookNow.valueAccommodation')}</p>
           </div>
         </div>
 
-        <button
-          onClick={() => globalThis.dispatchEvent(new Event('open-booking-drawer'))}
-          className="inline-flex items-center gap-3 px-12 py-5 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest text-sm hover:bg-brand-light transition-colors duration-300 cursor-pointer"
-          aria-label={t('bookNow.cta')}
-        >
-          {t('bookNow.cta')}
-        </button>
+        <div className="flex flex-col items-center gap-3 max-w-sm mx-auto">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t('bookNow.talkToConcierge')}
+            className="inline-flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold uppercase tracking-widest text-sm hover:bg-brand-light transition-colors duration-150"
+          >
+            {t('bookNow.talkToConcierge')}
+          </a>
+          <button
+            type="button"
+            onClick={() => globalThis.dispatchEvent(new Event('open-booking-drawer'))}
+            className="inline-flex items-center justify-center w-full py-3 rounded-2xl border border-white/15 text-brand-light/70 text-sm font-medium tracking-wide hover:border-white/30 hover:text-brand-light transition-colors duration-150 cursor-pointer"
+            aria-label={t('bookNow.cta')}
+          >
+            {t('bookNow.cta')}
+          </button>
+        </div>
 
         <p className="text-brand-light/55 text-sm mt-6">
           {t('bookNow.disclaimer')}

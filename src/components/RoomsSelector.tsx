@@ -165,22 +165,23 @@ export default function RoomsSelector() {
             {/* CTAs */}
             <div className="space-y-3">
               <a
-                href="#book"
-                aria-label="Book Open Retreat at CourtSide Menorca"
-                className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
-              >
-                {t('menorcaPage.rooms.securePlace')}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
-              </a>
-              <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t('menorcaPage.rooms.talkToConcierge')}
-                className="flex items-center justify-center w-full py-3 rounded-2xl border border-white/15 text-white/55 text-sm font-medium tracking-wide hover:border-white/30 hover:text-white/80 transition-colors duration-150"
+                className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
               >
                 {t('menorcaPage.rooms.talkToConcierge')}
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
               </a>
+              <button
+                type="button"
+                onClick={() => globalThis.dispatchEvent(new Event('open-booking-drawer'))}
+                aria-label={t('menorcaPage.rooms.securePlace')}
+                className="flex items-center justify-center w-full py-3 rounded-2xl border border-white/15 text-white/55 text-sm font-medium tracking-wide hover:border-white/30 hover:text-white/80 transition-colors duration-150 cursor-pointer"
+              >
+                {t('menorcaPage.rooms.securePlace')}
+              </button>
             </div>
           </div>
 

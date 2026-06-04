@@ -45,9 +45,9 @@ export default function Navbar({ hideLangToggle = false }: Readonly<NavbarProps>
           <img
             src="/logogold.webp"
             alt="CourtSide Padel"
-            className="h-9 md:h-12 object-contain"
-            width={120}
-            height={48}
+            className="h-14 md:h-18 object-contain"
+            width={180}
+            height={72}
             fetchPriority="high"
             decoding="async"
           />

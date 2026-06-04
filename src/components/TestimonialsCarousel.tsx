@@ -34,9 +34,6 @@ export default function TestimonialsCarousel() {
         <div className="text-center mb-14">
           <p className="text-xs uppercase tracking-[0.3em] text-brand-gold font-semibold mb-3">{t('testimonials.label')}</p>
           <h2 className="text-4xl md:text-5xl font-light text-brand-light tracking-wide">{t('testimonials.title')}</h2>
-          <p className="text-brand-light/70 text-lg mt-4 max-w-md mx-auto">
-            {t('testimonials.subtitle')}
-          </p>
         </div>
 
         {/* Carousel */}
