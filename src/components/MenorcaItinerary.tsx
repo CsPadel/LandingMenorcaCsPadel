@@ -6,7 +6,6 @@ import '../i18n/config';
 interface Activity {
   time: string;
   title: string;
-  desc: string;
   image: string;
 }
 
@@ -97,12 +96,9 @@ export default function MenorcaItinerary() {
                   </div>
                 </div>
                 <div className="p-6 md:p-8 flex-1 flex flex-col justify-start">
-                  <h3 className="text-white text-2xl font-light mb-3 leading-snug">
+                  <h3 className="text-white text-2xl font-light leading-snug">
                     {act.title}
                   </h3>
-                  <p className="text-white/60 text-sm leading-relaxed">
-                    {act.desc}
-                  </p>
                 </div>
               </motion.div>
             ))}
