@@ -53,6 +53,36 @@ const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLoc
 <!doctype html>
 <html lang={lang}>
 	<head>
+		<!-- Google Consent Mode v2 defaults (must run before GTM) -->
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('consent', 'default', {
+				'ad_storage': 'denied',
+				'ad_user_data': 'denied',
+				'ad_personalization': 'denied',
+				'analytics_storage': 'denied',
+				'wait_for_update': 500
+			});
+			(function () {
+				var choice = localStorage.getItem('cs_cookie_consent');
+				if (choice === 'accepted' || choice === '1') {
+					gtag('consent', 'update', {
+						'ad_storage': 'granted',
+						'ad_user_data': 'granted',
+						'ad_personalization': 'granted',
+						'analytics_storage': 'granted'
+					});
+				}
+			})();
+		</script>
+		<!-- Google Tag Manager -->
+		<script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-52QPRRZ8');</script>
+		<!-- End Google Tag Manager -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="/images-solicitadas/blue-favicon.png" />
@@ -101,6 +131,10 @@ const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLoc
 		<slot name="head" />
 	</head>
 	<body class="bg-brand-dark text-brand-light font-inter antialiased overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark" style="font-feature-settings: 'kern' 1, 'liga' 1;">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52QPRRZ8"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<!-- Skip to main content for keyboard/screen reader users -->
 		<a
 			href="#main-content"

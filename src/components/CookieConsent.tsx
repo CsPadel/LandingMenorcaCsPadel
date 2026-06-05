@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../i18n/config';
-
-const STORAGE_KEY = 'cs_cookie_consent';
+import { applyConsent, getStoredConsent, storeConsent } from '../lib/consent';
 
 export default function CookieConsent() {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem(STORAGE_KEY)) {
+    const stored = getStoredConsent();
+    if (stored === 'accepted') {
+      applyConsent('accepted');
+    }
+    if (!stored) {
       setVisible(true);
     }
   }, []);
 
-  const accept = () => {
-    localStorage.setItem(STORAGE_KEY, '1');
+  const handleChoice = (choice: 'accepted' | 'rejected') => {
+    storeConsent(choice);
+    applyConsent(choice);
     setVisible(false);
   };
 
@@ -32,12 +36,22 @@ export default function CookieConsent() {
           {t('cookieConsent.learnMore')}
         </a>
       </p>
-      <button
-        onClick={accept}
-        className="shrink-0 px-6 py-2 border border-brand-gold text-brand-gold text-sm font-semibold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-dark transition-colors duration-200"
-      >
-        {t('cookieConsent.accept')}
-      </button>
+      <div className="flex shrink-0 items-center gap-3">
+        <button
+          type="button"
+          onClick={() => handleChoice('rejected')}
+          className="px-5 py-2 border border-brand-light/30 text-brand-light/80 text-sm font-semibold uppercase tracking-widest hover:border-brand-light/50 hover:text-brand-light transition-colors duration-200"
+        >
+          {t('cookieConsent.reject')}
+        </button>
+        <button
+          type="button"
+          onClick={() => handleChoice('accepted')}
+          className="px-6 py-2 border border-brand-gold text-brand-gold text-sm font-semibold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-dark transition-colors duration-200"
+        >
+          {t('cookieConsent.accept')}
+        </button>
+      </div>
     </div>
   );
 }
