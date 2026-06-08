@@ -332,8 +332,9 @@ export const resources = {
         backBtn: "Return to Homepage"
       },
       cookieConsent: {
-        message: "We use an essential cookie to remember your language preference.",
-        accept: "Got it",
+        message: "We use essential cookies for language preferences and, with your consent, analytics cookies to understand how visitors use our site.",
+        accept: "Accept all",
+        reject: "Reject non-essential",
         learnMore: "Cookie Policy"
       },
       bookingDrawer: {
@@ -681,8 +682,9 @@ export const resources = {
         backBtn: "Volver al Inicio"
       },
       cookieConsent: {
-        message: "Usamos una cookie esencial para recordar tu preferencia de idioma.",
-        accept: "Entendido",
+        message: "Usamos cookies esenciales para el idioma y, con tu consentimiento, cookies de analítica para entender cómo se usa el sitio.",
+        accept: "Aceptar todas",
+        reject: "Rechazar no esenciales",
         learnMore: "Política de Cookies"
       },
       bookingDrawer: {
@@ -1030,8 +1032,9 @@ export const resources = {
         backBtn: "Retour à l'Accueil"
       },
       cookieConsent: {
-        message: "Nous utilisons un cookie essentiel pour mémoriser votre préférence de langue.",
-        accept: "Compris",
+        message: "Nous utilisons des cookies essentiels pour la langue et, avec votre consentement, des cookies d'analyse pour comprendre l'utilisation du site.",
+        accept: "Tout accepter",
+        reject: "Refuser les non essentiels",
         learnMore: "Politique de Cookies"
       },
       bookingDrawer: {
