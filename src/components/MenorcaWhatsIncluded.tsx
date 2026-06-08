@@ -11,7 +11,7 @@ export default function MenorcaWhatsIncluded() {
       alt: 'Elite padel coaching session at Padelin, Menorca',
     },
     {
-      image: '/imagenes/hotel-pool-night.jpg',
+      image: '/images-solicitadas/Hotel pic1.jpg',
       alt: 'Luxury stay at Barceló Nura, Menorca',
     },
     {
@@ -19,8 +19,8 @@ export default function MenorcaWhatsIncluded() {
       alt: 'Fine dining with sea views in Menorca',
     },
     {
-      image: '/imagenes/boat-tour.jpg',
-      alt: 'Private boat tour and island adventures in Menorca',
+      image: '/posibles imagenes/vinedo.jpg',
+      alt: 'Vineyard tour at Binifadet, Menorca',
     },
   ];
 

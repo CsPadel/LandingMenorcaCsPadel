@@ -82,7 +82,7 @@ export const resources = {
               {
                 time: 'Morning',
                 title: 'Arrival & Check-In',
-                image: '/imagenes/EM-4.jpg',
+                image: '/posibles imagenes/barcelo nura.jpeg',
               },
               {
                 time: '14:00 – 16:30',
@@ -92,12 +92,12 @@ export const resources = {
               {
                 time: '17:00 – 18:30',
                 title: 'Warm-Up Padel Session',
-                image: '/imagenes/JOPS-721.JPG',
+                image: '/imagenes/EM-38.jpg',
               },
               {
                 time: '20:00',
                 title: 'Group Welcome Dinner',
-                image: '/imagenes/restaurante-interior.jpg',
+                image: '/imagenes/IMG_2448.JPG',
               },
             ],
           },
@@ -109,22 +109,22 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Breakfast — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/posibles imagenes/desayuno.jpeg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Padel Coaching & Matchplay',
-                image: '/imagenes/EM-81.jpg',
+                image: '/imagenes-nuevas/d3-coaching-tecnico-padel.webp',
               },
               {
                 time: '13:45 – 17:30',
                 title: 'Lunch & Boat Tour',
-                image: '/imagenes/sa punta.jpg',
+                image: '/imagenes-nuevas/d1-almuerzo-playero.webp',
               },
               {
                 time: '20:00',
                 title: 'Dinner — Hotel / Free Evening',
-                image: '/imagenes/restaurante-interior.jpg',
+                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
               },
             ],
           },
@@ -136,22 +136,24 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Breakfast — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Padel Coaching & Matches',
-                image: '/imagenes/EM-53.jpg',
+                image: '/Menorca Retreat Pics/DAY 2/EM-9.jpg',
+                imagePosition: 'center 30%',
               },
               {
                 time: '13:30 – 16:30',
                 title: 'Vineyard Tour & Lunch',
-                image: '/imagenes/vinedo-binifadet.jpg',
+                image: '/Menorca Retreat Pics/DAY 3/EM-41.jpg',
               },
               {
                 time: '20:00',
                 title: 'Group Dinner',
-                image: '/imagenes/IMG_2914.JPG',
+                image: '/Menorca Retreat Pics/DAY 3/EM-48.jpg',
+                imagePosition: 'center 70%',
               },
             ],
           },
@@ -163,7 +165,7 @@ export const resources = {
               {
                 time: '07:30 – 08:15',
                 title: 'Early Breakfast — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/posibles imagenes/barcelo comida.jpeg',
               },
               {
                 time: '09:00 – 13:00',
@@ -173,12 +175,12 @@ export const resources = {
               {
                 time: '13:00 – 14:30',
                 title: 'Tournament Lunch & Awards',
-                image: '/imagenes/IMG_2167.jpeg',
+                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
               },
               {
                 time: '17:00 – 19:00',
                 title: "Sunset & Tapas — Cova d'en Xoroi",
-                image: '/imagenes/cap roig.jpg',
+                image: '/posibles imagenes/cova de xorio.jpg',
               },
             ],
           },
@@ -190,12 +192,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Final Breakfast — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/imagenes-nuevas/d5-desayuno-final.webp',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Optional Padel Session — Padelin',
-                image: '/imagenes/JOPS-1071.JPG',
+                image: '/posibles imagenes/foto para padel opcional.png',
               },
               {
                 time: 'From 11:00',
@@ -429,7 +431,7 @@ export const resources = {
               {
                 time: 'Mañana',
                 title: 'Llegada & Check-In',
-                image: '/imagenes/EM-4.jpg',
+                image: '/posibles imagenes/barcelo nura.jpeg',
               },
               {
                 time: '14:00 – 16:30',
@@ -439,12 +441,12 @@ export const resources = {
               {
                 time: '17:00 – 18:30',
                 title: 'Sesión de Pádel (Calentamiento)',
-                image: '/imagenes/JOPS-721.JPG',
+                image: '/imagenes/EM-38.jpg',
               },
               {
                 time: '20:00',
                 title: 'Cena de Bienvenida en Grupo',
-                image: '/imagenes/restaurante-interior.jpg',
+                image: '/imagenes/IMG_2448.JPG',
               },
             ],
           },
@@ -456,22 +458,22 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Desayuno — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/posibles imagenes/desayuno.jpeg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Pádel (Entrenamiento y Partidos)',
-                image: '/imagenes/EM-81.jpg',
+                image: '/imagenes-nuevas/d3-coaching-tecnico-padel.webp',
               },
               {
                 time: '13:45 – 17:30',
                 title: 'Almuerzo y Paseo en Barco',
-                image: '/imagenes/sa punta.jpg',
+                image: '/imagenes-nuevas/d1-almuerzo-playero.webp',
               },
               {
                 time: '20:00',
                 title: 'Cena — Hotel / Tarde Libre',
-                image: '/imagenes/restaurante-interior.jpg',
+                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
               },
             ],
           },
@@ -483,22 +485,24 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Desayuno — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Pádel (Técnica y Partidos)',
-                image: '/imagenes/EM-53.jpg',
+                image: '/Menorca Retreat Pics/DAY 2/EM-9.jpg',
+                imagePosition: 'center 30%',
               },
               {
                 time: '13:30 – 16:30',
                 title: 'Visita a Viñedo y Almuerzo',
-                image: '/imagenes/vinedo-binifadet.jpg',
+                image: '/Menorca Retreat Pics/DAY 3/EM-41.jpg',
               },
               {
                 time: '20:00',
                 title: 'Cena de Grupo',
-                image: '/imagenes/IMG_2914.JPG',
+                image: '/Menorca Retreat Pics/DAY 3/EM-48.jpg',
+                imagePosition: 'center 70%',
               },
             ],
           },
@@ -510,7 +514,7 @@ export const resources = {
               {
                 time: '07:30 – 08:15',
                 title: 'Desayuno Temprano — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/posibles imagenes/barcelo comida.jpeg',
               },
               {
                 time: '09:00 – 13:00',
@@ -520,12 +524,12 @@ export const resources = {
               {
                 time: '13:00 – 14:30',
                 title: 'Almuerzo & Entrega de Premios',
-                image: '/imagenes/IMG_2167.jpeg',
+                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
               },
               {
                 time: '17:00 – 19:00',
                 title: "Atardecer & Tapas — Cova d'en Xoroi",
-                image: '/imagenes/cap roig.jpg',
+                image: '/posibles imagenes/cova de xorio.jpg',
               },
             ],
           },
@@ -537,12 +541,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Desayuno Final — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/imagenes-nuevas/d5-desayuno-final.webp',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Sesión de Pádel Opcional — Padelin',
-                image: '/imagenes/JOPS-1071.JPG',
+                image: '/posibles imagenes/foto para padel opcional.png',
               },
               {
                 time: 'Desde 11:00',
@@ -776,7 +780,7 @@ export const resources = {
               {
                 time: 'Matin',
                 title: 'Arrivée & Check-In',
-                image: '/imagenes/EM-4.jpg',
+                image: '/posibles imagenes/barcelo nura.jpeg',
               },
               {
                 time: '14:00 – 16:30',
@@ -786,12 +790,12 @@ export const resources = {
               {
                 time: '17:00 – 18:30',
                 title: 'Session de Padel d\'Échauffement',
-                image: '/imagenes/JOPS-721.JPG',
+                image: '/imagenes/EM-38.jpg',
               },
               {
                 time: '20:00',
                 title: 'Dîner de Bienvenue en Groupe',
-                image: '/imagenes/restaurante-interior.jpg',
+                image: '/imagenes/IMG_2448.JPG',
               },
             ],
           },
@@ -803,22 +807,22 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Petit-Déjeuner — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/posibles imagenes/desayuno.jpeg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Coaching Padel & Matchs',
-                image: '/imagenes/EM-81.jpg',
+                image: '/imagenes-nuevas/d3-coaching-tecnico-padel.webp',
               },
               {
                 time: '13:45 – 17:30',
                 title: 'Déjeuner & Tour en Bateau',
-                image: '/imagenes/sa punta.jpg',
+                image: '/imagenes-nuevas/d1-almuerzo-playero.webp',
               },
               {
                 time: '20:00',
                 title: 'Dîner — Hôtel / Soirée Libre',
-                image: '/imagenes/restaurante-interior.jpg',
+                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
               },
             ],
           },
@@ -830,22 +834,24 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Petit-Déjeuner — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Coaching Padel & Matchs',
-                image: '/imagenes/EM-53.jpg',
+                image: '/Menorca Retreat Pics/DAY 2/EM-9.jpg',
+                imagePosition: 'center 30%',
               },
               {
                 time: '13:30 – 16:30',
                 title: 'Visite du Vignoble & Déjeuner',
-                image: '/imagenes/vinedo-binifadet.jpg',
+                image: '/Menorca Retreat Pics/DAY 3/EM-41.jpg',
               },
               {
                 time: '20:00',
                 title: 'Dîner de Groupe',
-                image: '/imagenes/IMG_2914.JPG',
+                image: '/Menorca Retreat Pics/DAY 3/EM-48.jpg',
+                imagePosition: 'center 70%',
               },
             ],
           },
@@ -857,7 +863,7 @@ export const resources = {
               {
                 time: '07:30 – 08:15',
                 title: 'Petit-Déjeuner Matinal — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/posibles imagenes/barcelo comida.jpeg',
               },
               {
                 time: '09:00 – 13:00',
@@ -867,12 +873,12 @@ export const resources = {
               {
                 time: '13:00 – 14:30',
                 title: 'Déjeuner du Tournoi & Remise des Prix',
-                image: '/imagenes/IMG_2167.jpeg',
+                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
               },
               {
                 time: '17:00 – 19:00',
                 title: "Coucher de Soleil & Tapas — Cova d'en Xoroi",
-                image: '/imagenes/cap roig.jpg',
+                image: '/posibles imagenes/cova de xorio.jpg',
               },
             ],
           },
@@ -884,12 +890,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Dernier Petit-Déjeuner — Barceló Nura',
-                image: '/imagenes/hotel-terrace.jpg',
+                image: '/imagenes-nuevas/d5-desayuno-final.webp',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Session de Padel Optionnelle — Padelin',
-                image: '/imagenes/JOPS-1071.JPG',
+                image: '/posibles imagenes/foto para padel opcional.png',
               },
               {
                 time: 'Dès 11:00',

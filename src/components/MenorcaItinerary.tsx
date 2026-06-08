@@ -7,6 +7,7 @@ interface Activity {
   time: string;
   title: string;
   image: string;
+  imagePosition?: string;
 }
 
 interface Day {
@@ -83,6 +84,7 @@ export default function MenorcaItinerary() {
                     src={act.image}
                     alt={act.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    style={{ objectPosition: act.imagePosition ?? 'center' }}
                     loading="lazy"
                     decoding="async"
                     width={800}
