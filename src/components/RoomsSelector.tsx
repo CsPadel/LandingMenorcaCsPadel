@@ -137,10 +137,10 @@ export default function RoomsSelector() {
                 {t('menorcaPage.rooms.priceLabel')}
               </p>
               <p className="text-white font-semibold text-sm leading-relaxed">
-                {t('menorcaPage.rooms.openRetreat.priceSingle')}
+                {t('menorcaPage.rooms.openRetreat.priceShared')}
               </p>
               <p className="text-white/70 text-sm leading-relaxed">
-                {t('menorcaPage.rooms.openRetreat.priceShared')}
+                {t('menorcaPage.rooms.openRetreat.priceSingle')}
               </p>
             </div>
 

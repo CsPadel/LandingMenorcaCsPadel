@@ -96,7 +96,7 @@ export default function RetreatLandingHero({ bgVideoSrc, bgImageSrc }: Readonly<
         <div className="animate-hero-in-delay">
           <button
             onClick={() => {
-              document.getElementById('rooms')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('itinerary')?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="btn-luxury group"
           >
