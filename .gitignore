@@ -24,3 +24,53 @@ Thumbs.db
 # npm lock file (project uses pnpm)
 package-lock.json
 
+# ── Image / video folders: ignore everything, then un-ignore what the site uses ──
+
+public/imagenes/*
+!public/imagenes/Cala en porter.jpg
+!public/imagenes/EM-2-desktop.webp
+!public/imagenes/EM-2-mobile.webp
+!public/imagenes/EM-2.webp
+!public/imagenes/EM-22.jpg
+!public/imagenes/EM-38.jpg
+!public/imagenes/EM-4.jpg
+!public/imagenes/EM-81.jpg
+!public/imagenes/IMG_2448.JPG
+!public/imagenes/IMG_2914.webp
+!public/imagenes/hotel-bar.jpg
+!public/imagenes/hotel-pool-day.jpg
+!public/imagenes/hotel-pool-night.jpg
+!public/imagenes/hotel-room-sea.jpg
+!public/imagenes/hotel-spa.jpg
+!public/imagenes/sa punta.jpg
+!public/imagenes/testimonio-anatole.jpg
+!public/imagenes/testimonio-jean.jpg
+!public/imagenes/testimonio-nicolas.jpg
+
+public/imagenes-nuevas/*
+!public/imagenes-nuevas/d1-almuerzo-playero.webp
+!public/imagenes-nuevas/d3-coaching-tecnico-padel.webp
+!public/imagenes-nuevas/d5-desayuno-final.webp
+
+public/images-solicitadas/*
+!public/images-solicitadas/Hotel pic1.jpg
+!public/images-solicitadas/blue-favicon.png
+
+public/posibles imagenes/*
+!public/posibles imagenes/barcelo comida.jpeg
+!public/posibles imagenes/barcelo nura.jpeg
+!public/posibles imagenes/cova de xorio.jpg
+!public/posibles imagenes/desayuno.jpeg
+!public/posibles imagenes/foto para padel opcional.png
+!public/posibles imagenes/vinedo.jpg
+
+public/Menorca Retreat Pics/**
+!public/Menorca Retreat Pics/DAY 1/
+!public/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG
+!public/Menorca Retreat Pics/DAY 2/
+!public/Menorca Retreat Pics/DAY 2/EM-9.jpg
+!public/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg
+!public/Menorca Retreat Pics/DAY 3/
+!public/Menorca Retreat Pics/DAY 3/EM-41.jpg
+!public/Menorca Retreat Pics/DAY 3/EM-48.jpg
+
