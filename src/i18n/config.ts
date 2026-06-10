@@ -346,7 +346,7 @@ export const resources = {
         labelDates: "Dates",
         valueDates: "30 Sep – 4 Oct 2026",
         labelFrom: "From",
-        valueFrom: "£1,850 per person",
+        valueFrom: "£1,850",
         iframeTitle: "Booking enquiry",
         footerDisclaimer: "No commitment required. Handled per our",
         privacyLink: "Privacy Policy"
@@ -696,7 +696,7 @@ export const resources = {
         labelDates: "Fechas",
         valueDates: "30 sep – 4 oct 2026",
         labelFrom: "Desde",
-        valueFrom: "1.850 £ por persona",
+        valueFrom: "1.850 £",
         iframeTitle: "Formulario de reserva",
         footerDisclaimer: "Sin compromiso. Según nuestra",
         privacyLink: "Política de Privacidad"
@@ -1046,7 +1046,7 @@ export const resources = {
         labelDates: "Dates",
         valueDates: "30 sep – 4 oct 2026",
         labelFrom: "À partir de",
-        valueFrom: "1 850 £ par personne",
+        valueFrom: "1 850 £",
         iframeTitle: "Formulaire de réservation",
         footerDisclaimer: "Sans engagement. Conformément à notre",
         privacyLink: "Politique de confidentialité"
