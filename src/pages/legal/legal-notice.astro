@@ -1,10 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import LegalLanguageNotice from '../../components/LegalLanguageNotice';
+import { sitePath, SITE_URL, SITE_HOST } from '../../lib/site';
 
 const title = "Legal Notice | CourtSide Padel Retreats";
 const description = "Legal notice and company information for CourtSide Padel Retreats, in compliance with LSSI-CE and UK consumer law.";
-const canonical = "https://menorca.courtsidepadel.com/legal/legal-notice";
+const canonical = sitePath('/legal/legal-notice');
 ---
 
 <Layout title={title} description={description} canonical={canonical} hideLangToggle={true}>
@@ -28,7 +29,7 @@ const canonical = "https://menorca.courtsidepadel.com/legal/legal-notice";
             <p><strong>Registered address:</strong> 24 Hendham Road, SW17 7DQ</p>
             <p><strong>VAT / Tax identification number:</strong> Pending registration</p>
             <p><strong>Email:</strong> <a href="mailto:awatelet@cspadel.com" class="text-brand-gold underline underline-offset-2">awatelet@cspadel.com</a></p>
-            <p><strong>Website:</strong> <a href="https://menorca.courtsidepadel.com" class="text-brand-gold underline underline-offset-2">menorca.courtsidepadel.com</a></p>
+            <p><strong>Website:</strong> <a href={SITE_URL} class="text-brand-gold underline underline-offset-2">{SITE_HOST}</a></p>
           </div>
         </section>
 

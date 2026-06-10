@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://menorca.courtsidepadel.com/sitemap.xml
+Sitemap: https://menorca.cspadel.com/sitemap.xml

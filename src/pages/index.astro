@@ -9,8 +9,8 @@ import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import FAQ from '../components/FAQ';
 import BookingDrawer from '../components/BookingDrawer';
 import BookNowSection from '../components/BookNowSection';
+import { SITE_URL, BRAND_URL, BRAND_LOGO_URL } from '../lib/site';
 
-const SITE = "https://menorca.courtsidepadel.com";
 const seoTitle = "Menorca Padel Retreat 2026 | Luxury Padel Holiday Mediterranean | CourtSide";
 const seoDescription = "Experience the ultimate luxury padel retreat in Menorca. 5 days of private coaching, boat tours, vineyard visits, padel tournament & gourmet dining. 30 Sep – 4 Oct 2026.";
 const seoKeywords = "Menorca padel retreat, luxury padel holiday Menorca, padel training Mediterranean, private padel villa Spain, CourtSide Menorca, padel vacation 2026, padel coaching retreat, padel holiday Balearic Islands";
@@ -20,8 +20,8 @@ const menorcaSchema = {
   "@type": "TouristTrip",
   "name": "CourtSide Menorca Padel Retreat 2026",
   "description": seoDescription,
-  "url": SITE,
-  "image": `${SITE}/imagenes/EM-2.webp`,
+  "url": SITE_URL,
+  "image": `${SITE_URL}/imagenes/EM-2.webp`,
   "touristType": ["Sports Enthusiast", "Luxury Traveler"],
   "duration": "P5D",
   "itinerary": {
@@ -39,8 +39,8 @@ const menorcaSchema = {
   "provider": {
     "@type": "Organization",
     "name": "CourtSide Padel Retreats",
-    "url": "https://courtsidepadel.com",
-    "logo": "https://courtsidepadel.com/logogold.webp",
+    "url": BRAND_URL,
+    "logo": BRAND_LOGO_URL,
     "sameAs": []
   },
   "offers": [
@@ -53,21 +53,21 @@ const menorcaSchema = {
       "availability": "https://schema.org/LimitedAvailability",
       "validFrom": "2026-09-30",
       "validThrough": "2026-10-04",
-      "url": `${SITE}#book`
+      "url": `${SITE_URL}#book`
     },
     {
       "@type": "Offer",
       "name": "Full Villa — Exclusive Menorca Padel Retreat",
       "description": "Entire villa exclusively for groups of 8–20 guests. Complete privacy with private chef and dedicated concierge team.",
       "availability": "https://schema.org/LimitedAvailability",
-      "url": `${SITE}#book`
+      "url": `${SITE_URL}#book`
     },
     {
       "@type": "Offer",
       "name": "Executive Retreat — C-Suite Menorca Padel Programme",
       "description": "C-suite padel retreat with private meeting rooms, strategy sessions, and absolute discretion.",
       "availability": "https://schema.org/LimitedAvailability",
-      "url": `${SITE}#book`
+      "url": `${SITE_URL}#book`
     }
   ],
   "location": {
@@ -125,8 +125,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "CourtSide Padel Retreats",
-  "url": "https://courtsidepadel.com",
-  "logo": "https://courtsidepadel.com/logogold.webp",
+  "url": BRAND_URL,
+  "logo": BRAND_LOGO_URL,
   "description": "Ultra-luxury padel retreats in the world's most exclusive destinations.",
   "foundingDate": "2024",
   "serviceType": "Luxury Padel Retreat",
@@ -139,7 +139,7 @@ const organizationSchema = {
   description={seoDescription}
   keywords={seoKeywords}
   ogImage="/imagenes/EM-2.webp"
-  canonical={SITE}
+  canonical={SITE_URL}
   schema={menorcaSchema}
 >
   <link slot="head" rel="preload" as="image" href="/imagenes/EM-2-mobile.webp" fetchpriority="high" media="(max-width: 767px)" />
