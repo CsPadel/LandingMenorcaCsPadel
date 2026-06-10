@@ -301,7 +301,7 @@ export const resources = {
             image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
-            name: "Anatole Levy",
+            name: "Ana Levy",
             role: "CEO",
             text: "The combination of great coaching, beautiful surroundings, and exceptional hospitality made this a memorable trip. Every aspect of the retreat was carefully curated, from the accommodation and local dining experiences to the boat excursion and private transportation. It was the ideal mix of sport, relaxation, and discovering Menorca.",
             initials: "A",
@@ -332,9 +332,8 @@ export const resources = {
         backBtn: "Return to Homepage"
       },
       cookieConsent: {
-        message: "We use essential cookies for language preferences and, with your consent, analytics cookies to understand how visitors use our site.",
-        accept: "Accept all",
-        reject: "Reject non-essential",
+        message: "We use an essential cookie to remember your language preference.",
+        accept: "Got it",
         learnMore: "Cookie Policy"
       },
       bookingDrawer: {
@@ -651,7 +650,7 @@ export const resources = {
             image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
-            name: "Anatole Levy",
+            name: "Ana Levy",
             role: "CEO",
             text: "La combinación de un gran entrenamiento, un entorno precioso y una hospitalidad excepcional hizo de este un viaje memorable. Cada aspecto del retiro estuvo cuidadosamente seleccionado, desde el alojamiento y las experiencias gastronómicas locales hasta la excursión en barco y el transporte privado. Fue la mezcla ideal de deporte, relax y descubrir Menorca.",
             initials: "A",
@@ -682,9 +681,8 @@ export const resources = {
         backBtn: "Volver al Inicio"
       },
       cookieConsent: {
-        message: "Usamos cookies esenciales para el idioma y, con tu consentimiento, cookies de analítica para entender cómo se usa el sitio.",
-        accept: "Aceptar todas",
-        reject: "Rechazar no esenciales",
+        message: "Usamos una cookie esencial para recordar tu preferencia de idioma.",
+        accept: "Entendido",
         learnMore: "Política de Cookies"
       },
       bookingDrawer: {
@@ -853,7 +851,6 @@ export const resources = {
                 time: '20:00',
                 title: 'Dîner de Groupe',
                 image: '/Menorca Retreat Pics/DAY 3/EM-48.jpg',
-                imagePosition: 'center 70%',
               },
             ],
           },
@@ -1001,7 +998,7 @@ export const resources = {
             image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
-            name: "Anatole Levy",
+            name: "Ana Levy",
             role: "CEO",
             text: "La combinaison d'un excellent coaching, de cadres magnifiques et d'une hospitalité exceptionnelle a fait de ce séjour un voyage mémorable. Chaque aspect du retreat était soigneusement sélectionné, de l'hébergement et les expériences gastronomiques locales à l'excursion en bateau et au transport privé. C'était le mix idéal entre sport, détente et découverte de Minorque.",
             initials: "A",
@@ -1032,9 +1029,8 @@ export const resources = {
         backBtn: "Retour à l'Accueil"
       },
       cookieConsent: {
-        message: "Nous utilisons des cookies essentiels pour la langue et, avec votre consentement, des cookies d'analyse pour comprendre l'utilisation du site.",
-        accept: "Tout accepter",
-        reject: "Refuser les non essentiels",
+        message: "Nous utilisons un cookie essentiel pour mémoriser votre préférence de langue.",
+        accept: "Compris",
         learnMore: "Politique de Cookies"
       },
       bookingDrawer: {
