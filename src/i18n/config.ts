@@ -82,12 +82,7 @@ export const resources = {
               {
                 time: 'Morning',
                 title: 'Arrival & Check-In',
-                image: '/posibles imagenes/barcelo nura.jpeg',
-              },
-              {
-                time: '14:00 – 16:30',
-                title: 'Seaside Lunch',
-                image: '/imagenes/Cala en porter.jpg',
+                image: '/nuevas fotos/arrival.jpg',
               },
               {
                 time: '17:00 – 18:30',
@@ -109,7 +104,7 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Breakfast — Barceló Nura',
-                image: '/posibles imagenes/desayuno.jpeg',
+                image: '/nuevas fotos/breakfast day 2.jpg',
               },
               {
                 time: '10:00 – 12:00',
@@ -119,12 +114,12 @@ export const resources = {
               {
                 time: '13:45 – 17:30',
                 title: 'Lunch & Boat Tour',
-                image: '/imagenes-nuevas/d1-almuerzo-playero.webp',
+                image: '/nuevas fotos/lunchu y boar.jpg',
               },
               {
                 time: '20:00',
                 title: 'Dinner — Hotel / Free Evening',
-                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
+                image: '/nuevas fotos/dinner dia 2.jpg',
               },
             ],
           },
@@ -136,13 +131,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Breakfast — Barceló Nura',
-                image: '/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg',
+                image: '/nuevas fotos/day 3 desayuno.jpg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Padel Coaching & Matches',
-                image: '/Menorca Retreat Pics/DAY 2/EM-9.jpg',
-                imagePosition: 'center 30%',
+                image: '/nuevas fotos/day 3.jpg',
               },
               {
                 time: '13:30 – 16:30',
@@ -165,7 +159,7 @@ export const resources = {
               {
                 time: '07:30 – 08:15',
                 title: 'Early Breakfast — Barceló Nura',
-                image: '/posibles imagenes/barcelo comida.jpeg',
+                image: '/nuevas fotos/adab4f92-0e60-46c3-a43a-d37ced1b5d42.png',
               },
               {
                 time: '09:00 – 13:00',
@@ -192,12 +186,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Final Breakfast — Barceló Nura',
-                image: '/imagenes-nuevas/d5-desayuno-final.webp',
+                image: '/nuevas fotos/380fa89e-d61b-4d43-9859-9cc1b3630d41.png',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Optional Padel Session — Padelin',
-                image: '/posibles imagenes/foto para padel opcional.png',
+                image: '/nuevas fotos/b8d75113-9b1d-4f7f-8b3d-9c25366aa4d3.jpg',
               },
               {
                 time: 'From 11:00',
@@ -288,24 +282,24 @@ export const resources = {
         items: [
           {
             name: "Jean Bonnavion",
-            role: "Partner",
+            role: "Partner - Palamon Capital",
             text: "The entire experience was incredibly well thought out from start to finish. The padel coaching was excellent and tailored to different levels, while the off-court activities gave us a chance to experience Menorca beyond the court. The accommodation, restaurants, and private transport were all first-class, making the trip completely stress-free.",
             initials: "J",
             image: "/imagenes/testimonio-jean.jpg"
           },
           {
             name: "Nicolas Maurer",
-            role: "Founder",
+            role: "CEO - Team Vitality",
             text: "What stood out most was the attention to detail. Everything was seamlessly organized, from airport transfers to restaurant reservations and daily activities. The balance between quality padel sessions and time to enjoy the island's tranquility was perfect. It felt like a premium experience without ever feeling overly structured.",
             initials: "N",
             image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
-            name: "Ana Levy",
-            role: "CEO",
+            name: "Anatole Levy",
+            role: "Founder - Bizentis",
             text: "The combination of great coaching, beautiful surroundings, and exceptional hospitality made this a memorable trip. Every aspect of the retreat was carefully curated, from the accommodation and local dining experiences to the boat excursion and private transportation. It was the ideal mix of sport, relaxation, and discovering Menorca.",
             initials: "A",
-            image: "/imagenes/testimonio-anatole.jpg"
+            image: "/imagenes/testimonio-jean.jpg"
           }
         ]
       },
@@ -431,12 +425,7 @@ export const resources = {
               {
                 time: 'Mañana',
                 title: 'Llegada & Check-In',
-                image: '/posibles imagenes/barcelo nura.jpeg',
-              },
-              {
-                time: '14:00 – 16:30',
-                title: 'Almuerzo frente al mar',
-                image: '/imagenes/Cala en porter.jpg',
+                image: '/nuevas fotos/arrival.jpg',
               },
               {
                 time: '17:00 – 18:30',
@@ -458,7 +447,7 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Desayuno — Barceló Nura',
-                image: '/posibles imagenes/desayuno.jpeg',
+                image: '/nuevas fotos/breakfast day 2.jpg',
               },
               {
                 time: '10:00 – 12:00',
@@ -468,12 +457,12 @@ export const resources = {
               {
                 time: '13:45 – 17:30',
                 title: 'Almuerzo y Paseo en Barco',
-                image: '/imagenes-nuevas/d1-almuerzo-playero.webp',
+                image: '/nuevas fotos/lunchu y boar.jpg',
               },
               {
                 time: '20:00',
                 title: 'Cena — Hotel / Tarde Libre',
-                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
+                image: '/nuevas fotos/dinner dia 2.jpg',
               },
             ],
           },
@@ -485,13 +474,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Desayuno — Barceló Nura',
-                image: '/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg',
+                image: '/nuevas fotos/day 3 desayuno.jpg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Pádel (Técnica y Partidos)',
-                image: '/Menorca Retreat Pics/DAY 2/EM-9.jpg',
-                imagePosition: 'center 30%',
+                image: '/nuevas fotos/day 3.jpg',
               },
               {
                 time: '13:30 – 16:30',
@@ -514,7 +502,7 @@ export const resources = {
               {
                 time: '07:30 – 08:15',
                 title: 'Desayuno Temprano — Barceló Nura',
-                image: '/posibles imagenes/barcelo comida.jpeg',
+                image: '/nuevas fotos/adab4f92-0e60-46c3-a43a-d37ced1b5d42.png',
               },
               {
                 time: '09:00 – 13:00',
@@ -541,12 +529,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Desayuno Final — Barceló Nura',
-                image: '/imagenes-nuevas/d5-desayuno-final.webp',
+                image: '/nuevas fotos/380fa89e-d61b-4d43-9859-9cc1b3630d41.png',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Sesión de Pádel Opcional — Padelin',
-                image: '/posibles imagenes/foto para padel opcional.png',
+                image: '/nuevas fotos/b8d75113-9b1d-4f7f-8b3d-9c25366aa4d3.jpg',
               },
               {
                 time: 'Desde 11:00',
@@ -637,24 +625,24 @@ export const resources = {
         items: [
           {
             name: "Jean Bonnavion",
-            role: "Partner",
+            role: "Partner - Palamon Capital",
             text: "Toda la experiencia estuvo increíblemente bien pensada de principio a fin. El entrenamiento de pádel fue excelente y adaptado a distintos niveles, mientras que las actividades fuera de la pista nos permitieron conocer Menorca más allá de la cancha. El alojamiento, los restaurantes y el transporte privado fueron de primera clase, lo que hizo el viaje completamente libre de estrés.",
             initials: "J",
             image: "/imagenes/testimonio-jean.jpg"
           },
           {
             name: "Nicolas Maurer",
-            role: "Founder",
+            role: "CEO - Team Vitality",
             text: "Lo que más destacó fue la atención al detalle. Todo estuvo organizado a la perfección, desde los traslados al aeropuerto hasta las reservas en restaurantes y las actividades diarias. El equilibrio entre sesiones de pádel de calidad y tiempo para disfrutar de la tranquilidad de la isla fue perfecto. Se sintió como una experiencia premium sin resultar nunca demasiado estructurada.",
             initials: "N",
             image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
-            name: "Ana Levy",
-            role: "CEO",
+            name: "Anatole Levy",
+            role: "Founder - Bizentis",
             text: "La combinación de un gran entrenamiento, un entorno precioso y una hospitalidad excepcional hizo de este un viaje memorable. Cada aspecto del retiro estuvo cuidadosamente seleccionado, desde el alojamiento y las experiencias gastronómicas locales hasta la excursión en barco y el transporte privado. Fue la mezcla ideal de deporte, relax y descubrir Menorca.",
             initials: "A",
-            image: "/imagenes/testimonio-anatole.jpg"
+            image: "/imagenes/testimonio-jean.jpg"
           }
         ]
       },
@@ -780,12 +768,7 @@ export const resources = {
               {
                 time: 'Matin',
                 title: 'Arrivée & Check-In',
-                image: '/posibles imagenes/barcelo nura.jpeg',
-              },
-              {
-                time: '14:00 – 16:30',
-                title: 'Déjeuner en Bord de Mer',
-                image: '/imagenes/Cala en porter.jpg',
+                image: '/nuevas fotos/arrival.jpg',
               },
               {
                 time: '17:00 – 18:30',
@@ -807,7 +790,7 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Petit-Déjeuner — Barceló Nura',
-                image: '/posibles imagenes/desayuno.jpeg',
+                image: '/nuevas fotos/breakfast day 2.jpg',
               },
               {
                 time: '10:00 – 12:00',
@@ -817,12 +800,12 @@ export const resources = {
               {
                 time: '13:45 – 17:30',
                 title: 'Déjeuner & Tour en Bateau',
-                image: '/imagenes-nuevas/d1-almuerzo-playero.webp',
+                image: '/nuevas fotos/lunchu y boar.jpg',
               },
               {
                 time: '20:00',
                 title: 'Dîner — Hôtel / Soirée Libre',
-                image: '/Menorca Retreat Pics/DAY 1/IMG_1460 2 copy.JPG',
+                image: '/nuevas fotos/dinner dia 2.jpg',
               },
             ],
           },
@@ -834,13 +817,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Petit-Déjeuner — Barceló Nura',
-                image: '/Menorca Retreat Pics/DAY 2/IMG_2229.jpeg',
+                image: '/nuevas fotos/day 3 desayuno.jpg',
               },
               {
                 time: '10:00 – 12:00',
                 title: 'Coaching Padel & Matchs',
-                image: '/Menorca Retreat Pics/DAY 2/EM-9.jpg',
-                imagePosition: 'center 30%',
+                image: '/nuevas fotos/day 3.jpg',
               },
               {
                 time: '13:30 – 16:30',
@@ -862,7 +844,7 @@ export const resources = {
               {
                 time: '07:30 – 08:15',
                 title: 'Petit-Déjeuner Matinal — Barceló Nura',
-                image: '/posibles imagenes/barcelo comida.jpeg',
+                image: '/nuevas fotos/adab4f92-0e60-46c3-a43a-d37ced1b5d42.png',
               },
               {
                 time: '09:00 – 13:00',
@@ -889,12 +871,12 @@ export const resources = {
               {
                 time: '08:30 – 09:15',
                 title: 'Dernier Petit-Déjeuner — Barceló Nura',
-                image: '/imagenes-nuevas/d5-desayuno-final.webp',
+                image: '/nuevas fotos/380fa89e-d61b-4d43-9859-9cc1b3630d41.png',
               },
               {
                 time: '10:30 – 13:00',
                 title: 'Session de Padel Optionnelle — Padelin',
-                image: '/posibles imagenes/foto para padel opcional.png',
+                image: '/nuevas fotos/b8d75113-9b1d-4f7f-8b3d-9c25366aa4d3.jpg',
               },
               {
                 time: 'Dès 11:00',
@@ -985,24 +967,24 @@ export const resources = {
         items: [
           {
             name: "Jean Bonnavion",
-            role: "Partner",
+            role: "Partner - Palamon Capital",
             text: "L'ensemble de l'expérience était incroyablement bien pensé du début à la fin. Le coaching padel était excellent et adapté aux différents niveaux, tandis que les activités hors court nous ont permis de découvrir Minorque au-delà du terrain. L'hébergement, les restaurants et le transport privé étaient tous de première classe, rendant le voyage totalement sans stress.",
             initials: "J",
             image: "/imagenes/testimonio-jean.jpg"
           },
           {
             name: "Nicolas Maurer",
-            role: "Founder",
+            role: "CEO - Team Vitality",
             text: "Ce qui m'a le plus marqué, c'est l'attention aux détails. Tout était organisé de façon fluide, des transferts aéroport aux réservations de restaurants en passant par les activités quotidiennes. L'équilibre entre des sessions de padel de qualité et le temps pour profiter de la tranquillité de l'île était parfait. On avait l'impression d'une expérience premium sans jamais se sentir trop encadré.",
             initials: "N",
             image: "/imagenes/testimonio-nicolas.jpg"
           },
           {
-            name: "Ana Levy",
-            role: "CEO",
+            name: "Anatole Levy",
+            role: "Founder - Bizentis",
             text: "La combinaison d'un excellent coaching, de cadres magnifiques et d'une hospitalité exceptionnelle a fait de ce séjour un voyage mémorable. Chaque aspect du retreat était soigneusement sélectionné, de l'hébergement et les expériences gastronomiques locales à l'excursion en bateau et au transport privé. C'était le mix idéal entre sport, détente et découverte de Minorque.",
             initials: "A",
-            image: "/imagenes/testimonio-anatole.jpg"
+            image: "/imagenes/testimonio-jean.jpg"
           }
         ]
       },
