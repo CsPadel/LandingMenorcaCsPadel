@@ -77,25 +77,22 @@ const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLoc
 				}
 			})();
 		</script>
-		<!-- Google Ads global tag (gtag.js) — needed for conversion tracking fired from React components -->
+		<!-- Preconnect to third-party origins -->
+		<link rel="preconnect" href="https://www.googletagmanager.com" />
+		<link rel="preconnect" href="https://www.google-analytics.com" />
+		<!-- Google Ads global tag (gtag.js) — reuses dataLayer + gtag already defined above -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18206970630"></script>
 		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'AW-18206970630');
 		</script>
 		<!-- End Google Ads global tag -->
-		<!-- Google Tag Manager -->
-		<script is:inline define:vars={{ gtmId: GTM_ID }}>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer',gtmId);</script>
+		<!-- Google Tag Manager (deferred to not block first paint) -->
+		<script is:inline define:vars={{ gtmId: GTM_ID }}>window.addEventListener('load',function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtmId);});</script>
 		<!-- End Google Tag Manager -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/svg+xml" href="/logo/Logo Gold.svg" />
+		<link rel="icon" type="image/svg+xml" href="/csfavicon.svg" />
 		<link rel="alternate icon" type="image/png" href="/images-solicitadas/blue-favicon.png" />
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="generator" content={Astro.generator} />

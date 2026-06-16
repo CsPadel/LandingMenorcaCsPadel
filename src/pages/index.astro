@@ -115,6 +115,7 @@ const organizationSchema = {
   canonical={SITE_URL}
   schema={menorcaSchema}
 >
+  <!-- Preload hero poster images (used as placeholder before video plays) -->
   <link slot="head" rel="preload" as="image" href="/imagenes/EM-2-mobile.webp" fetchpriority="high" media="(max-width: 767px)" />
   <link slot="head" rel="preload" as="image" href="/imagenes/EM-2-desktop.webp" fetchpriority="high" media="(min-width: 768px)" />
   <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
