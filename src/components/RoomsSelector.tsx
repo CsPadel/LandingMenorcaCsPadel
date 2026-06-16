@@ -182,7 +182,7 @@ export default function RoomsSelector() {
                 rel="noopener noreferrer"
                 onClick={fireWhatsAppConversion}
                 aria-label={t('menorcaPage.rooms.talkToConcierge')}
-                className="flex items-center justify-center gap-3 w-full py-4 px-5 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm hover:bg-white hover:text-brand-dark transition-colors duration-150 group leading-tight text-center"
+                className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
               >
                 {t('menorcaPage.rooms.talkToConcierge')}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />

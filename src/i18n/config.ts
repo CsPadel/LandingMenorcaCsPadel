@@ -221,7 +221,7 @@ export const resources = {
           priceLabel: "Total Retreat Price",
           whatsIncluded: "What's included",
           securePlace: "Secure Your Place",
-          talkToConcierge: "Enquire about a bespoke private retreat",
+          talkToConcierge: "Enquire about",
           talkToConciergeMessage: "I need more information about the Menorca retreat",
           openRetreat: {
             name: "Open Retreat",
@@ -316,7 +316,7 @@ export const resources = {
         labelAccommodation: "Accommodation",
         valueAccommodation: "Barceló Nura",
         cta: "Secure Your Place →",
-        talkToConcierge: "Enquire about a bespoke private retreat",
+        talkToConcierge: "Enquire about",
         disclaimer: "No commitment required. Speak with your Personal Concierge first."
       },
       notFound: {
@@ -564,7 +564,7 @@ export const resources = {
           priceLabel: "Precio Total del Retiro",
           whatsIncluded: "Qué incluye",
           securePlace: "Asegurar mi Plaza",
-          talkToConcierge: "Hablar con un Concierge",
+          talkToConcierge: "Más información",
           talkToConciergeMessage: "Necesito más información sobre el retiro de Menorca",
           openRetreat: {
             name: "Open Retreat",
@@ -659,7 +659,7 @@ export const resources = {
         labelAccommodation: "Alojamiento",
         valueAccommodation: "Barceló Nura",
         cta: "Asegurar mi Plaza →",
-        talkToConcierge: "Hablar con un Concierge",
+        talkToConcierge: "Más información",
         disclaimer: "Sin compromiso. Habla primero con tu Concierge Personal."
       },
       notFound: {
@@ -906,7 +906,7 @@ export const resources = {
           priceLabel: "Prix Total du Séjour",
           whatsIncluded: "Ce qui est inclus",
           securePlace: "Réserver ma Place",
-          talkToConcierge: "Parler à un Concierge",
+          talkToConcierge: "En savoir plus",
           talkToConciergeMessage: "J'ai besoin de plus d'informations sur le séjour à Minorque",
           openRetreat: {
             name: "Séjour Ouvert",
@@ -1001,7 +1001,7 @@ export const resources = {
         labelAccommodation: "Hébergement",
         valueAccommodation: "Barceló Nura",
         cta: "Réserver ma Place →",
-        talkToConcierge: "Parler à un Concierge",
+        talkToConcierge: "En savoir plus",
         disclaimer: "Sans engagement. Parlez d'abord avec votre Concierge Personnel."
       },
       notFound: {
