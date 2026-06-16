@@ -77,6 +77,15 @@ const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLoc
 				}
 			})();
 		</script>
+		<!-- Google Ads global tag (gtag.js) — needed for conversion tracking fired from React components -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18206970630"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'AW-18206970630');
+		</script>
+		<!-- End Google Ads global tag -->
 		<!-- Google Tag Manager -->
 		<script is:inline define:vars={{ gtmId: GTM_ID }}>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

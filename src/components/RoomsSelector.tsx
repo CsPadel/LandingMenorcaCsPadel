@@ -5,6 +5,16 @@ import '../i18n/config';
 
 const WHATSAPP_NUMBER = '447786694723';
 
+function fireWhatsAppConversion() {
+  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', 'conversion', {
+      send_to: 'AW-18206970630/Y0sOCK_27rccEIam4elD',
+      value: 1.0,
+      currency: 'USD',
+    });
+  }
+}
+
 const CheckIcon = () => (
   <svg className="w-3.5 h-3.5 text-brand-gold flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 16 16">
     <path d="M3 8l3.5 3.5L13 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -170,8 +180,9 @@ export default function RoomsSelector() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={fireWhatsAppConversion}
                 aria-label={t('menorcaPage.rooms.talkToConcierge')}
-                className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-colors duration-150 group"
+                className="flex items-center justify-center gap-3 w-full py-4 px-5 rounded-2xl bg-brand-gold text-brand-dark font-semibold text-sm hover:bg-white hover:text-brand-dark transition-colors duration-150 group leading-tight text-center"
               >
                 {t('menorcaPage.rooms.talkToConcierge')}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />

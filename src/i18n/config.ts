@@ -221,7 +221,7 @@ export const resources = {
           priceLabel: "Total Retreat Price",
           whatsIncluded: "What's included",
           securePlace: "Secure Your Place",
-          talkToConcierge: "Talk to a Concierge",
+          talkToConcierge: "Enquire about a bespoke private retreat",
           talkToConciergeMessage: "I need more information about the Menorca retreat",
           openRetreat: {
             name: "Open Retreat",
@@ -316,7 +316,7 @@ export const resources = {
         labelAccommodation: "Accommodation",
         valueAccommodation: "Barceló Nura",
         cta: "Secure Your Place →",
-        talkToConcierge: "Talk to a Concierge",
+        talkToConcierge: "Enquire about a bespoke private retreat",
         disclaimer: "No commitment required. Speak with your Personal Concierge first."
       },
       notFound: {

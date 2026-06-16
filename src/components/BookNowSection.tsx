@@ -4,6 +4,16 @@ import '../i18n/config';
 
 const WHATSAPP_NUMBER = '447786694723';
 
+function fireWhatsAppConversion() {
+  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', 'conversion', {
+      send_to: 'AW-18206970630/Y0sOCK_27rccEIam4elD',
+      value: 1.0,
+      currency: 'USD',
+    });
+  }
+}
+
 export default function BookNowSection() {
   const { t } = useTranslation();
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
@@ -64,6 +74,7 @@ export default function BookNowSection() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={fireWhatsAppConversion}
             aria-label={t('bookNow.talkToConcierge')}
             className="inline-flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-brand-gold text-brand-dark font-semibold uppercase tracking-widest text-sm hover:bg-brand-light transition-colors duration-150"
           >

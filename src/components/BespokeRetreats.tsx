@@ -4,6 +4,16 @@ import React from "react";
 
 const WHATSAPP_NUMBER = "447786694723";
 
+function fireWhatsAppConversion() {
+  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', 'conversion', {
+      send_to: 'AW-18206970630/Y0sOCK_27rccEIam4elD',
+      value: 1.0,
+      currency: 'USD',
+    });
+  }
+}
+
 export default function BespokeRetreats() {
   const { t } = useTranslation();
   const features = t("bespokeRetreats.features", {
@@ -47,6 +57,7 @@ export default function BespokeRetreats() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={fireWhatsAppConversion}
           className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-brand-dark text-brand-light font-bold uppercase tracking-widest text-sm hover:bg-brand-gold hover:text-brand-dark transition-colors duration-300"
           aria-label={t("bespokeRetreats.cta")}
         >
