@@ -9,12 +9,13 @@ import '../i18n/config';
 
 interface RetreatLandingHeroProps {
   readonly bgVideoSrc?: string;
+  readonly bgMobileVideoSrc?: string;
   readonly bgImageSrc?: string;
 }
 
-function Background({ bgVideoSrc, bgImageSrc }: Readonly<RetreatLandingHeroProps>) {
+function Background({ bgVideoSrc, bgMobileVideoSrc, bgImageSrc }: Readonly<RetreatLandingHeroProps>) {
   // null = SSR/unknown; false = mobile; true = desktop
-  // Only mount <video> after JS confirms desktop — mobile never downloads the file.
+  // Only mount <video> after JS confirms breakpoint — avoids downloading wrong asset.
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -24,20 +25,36 @@ function Background({ bgVideoSrc, bgImageSrc }: Readonly<RetreatLandingHeroProps
   if (bgVideoSrc) {
     return (
       <>
-        {!isDesktop && (
-          <picture>
-            <source media="(min-width: 768px)" srcSet="/imagenes/EM-2-desktop.webp" type="image/webp" />
-            <img
-              src="/imagenes/EM-2-mobile.webp"
-              alt=""
+        {/* Mobile: video if provided, otherwise fallback image */}
+        {isDesktop === false && (
+          bgMobileVideoSrc ? (
+            <video
+              src={bgMobileVideoSrc}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+              poster="/imagenes/EM-2-mobile.webp"
+              tabIndex={-1}
               className="absolute inset-0 w-full h-full object-cover scale-105"
-              loading="eager"
-              fetchPriority="high"
-              width={630}
-              height={945}
             />
-          </picture>
+          ) : (
+            <picture>
+              <source media="(min-width: 768px)" srcSet="/imagenes/EM-2-desktop.webp" type="image/webp" />
+              <img
+                src="/imagenes/EM-2-mobile.webp"
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover scale-105"
+                loading="eager"
+                fetchPriority="high"
+                width={630}
+                height={945}
+              />
+            </picture>
+          )
         )}
+        {/* Desktop video */}
         {isDesktop && (
           <video
             src={bgVideoSrc}
@@ -70,13 +87,13 @@ function Background({ bgVideoSrc, bgImageSrc }: Readonly<RetreatLandingHeroProps
   return <div className="absolute inset-0 w-full h-full bg-brand-dark-2" />;
 }
 
-export default function RetreatLandingHero({ bgVideoSrc, bgImageSrc }: Readonly<RetreatLandingHeroProps>) {
+export default function RetreatLandingHero({ bgVideoSrc, bgMobileVideoSrc, bgImageSrc }: Readonly<RetreatLandingHeroProps>) {
   const { t } = useTranslation();
 
   return (
     <section className="relative w-screen h-screen overflow-hidden flex items-end pb-32 px-8 md:px-16">
       <div className="absolute inset-0 w-full h-full z-0 bg-brand-dark">
-        <Background bgVideoSrc={bgVideoSrc} bgImageSrc={bgImageSrc} />
+        <Background bgVideoSrc={bgVideoSrc} bgMobileVideoSrc={bgMobileVideoSrc} bgImageSrc={bgImageSrc} />
         <div className="absolute inset-0 bg-brand-dark/50 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent z-20" />
       </div>
 
