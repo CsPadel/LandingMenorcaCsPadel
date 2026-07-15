@@ -222,7 +222,6 @@ export const resources = {
           whatsIncluded: "What's included",
           securePlace: "Secure Your Place",
           talkToConcierge: "Enquire now",
-          talkToConciergeMessage: "I need more information about the Menorca retreat",
           openRetreat: {
             name: "Open Retreat",
             tag: "Solo or Friends",
@@ -565,7 +564,6 @@ export const resources = {
           whatsIncluded: "Qué incluye",
           securePlace: "Asegurar mi Plaza",
           talkToConcierge: "Consultar ahora",
-          talkToConciergeMessage: "Necesito más información sobre el retiro de Menorca",
           openRetreat: {
             name: "Open Retreat",
             tag: "Solo o con amigos",
@@ -907,7 +905,6 @@ export const resources = {
           whatsIncluded: "Ce qui est inclus",
           securePlace: "Réserver ma Place",
           talkToConcierge: "Demander maintenant",
-          talkToConciergeMessage: "J'ai besoin de plus d'informations sur le séjour à Minorque",
           openRetreat: {
             name: "Séjour Ouvert",
             tag: "Solo ou entre Amis",
