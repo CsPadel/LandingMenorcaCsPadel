@@ -32,9 +32,7 @@ const images = [
 export default function RoomsSelector() {
   const { t } = useTranslation();
   const [active, setActive] = useState(0);
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    t('menorcaPage.rooms.talkToConciergeMessage'),
-  )}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
 
   const amenities = t('menorcaPage.rooms.openRetreat.amenities', { returnObjects: true }) as string[];
 

@@ -16,9 +16,7 @@ function fireWhatsAppConversion() {
 
 export default function BookNowSection() {
   const { t } = useTranslation();
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    t('menorcaPage.rooms.talkToConciergeMessage'),
-  )}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
 
   return (
     <section
