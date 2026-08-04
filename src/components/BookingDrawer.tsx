@@ -3,29 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import '../i18n/config';
-
-// Single multilingual form (Option B). Language is forced via ?language= on every load.
-// Hide JotForm's language picker in Form Designer → Styles → Inject Custom CSS:
-//   .language-dd { display: none !important; }
-const JOTFORM_ID = '261356602607051';
-// Codes must match JotForm multilingual setup (EN is "English (UK)" → en-UK).
-type JotformLanguage = 'es' | 'en-UK' | 'fr';
-
-function resolveJotformLanguage(i18nLang: string | undefined): JotformLanguage {
-  if (i18nLang?.startsWith('es')) return 'es';
-  if (i18nLang?.startsWith('fr')) return 'fr';
-  return 'en-UK';
-}
-
-function buildFormSrc(formId: string, language: JotformLanguage): string {
-  return `https://form.jotform.com/${formId}?language=${language}`;
-}
+import BookingForm from './BookingForm';
 
 export default function BookingDrawer() {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
-  const jotformLang = resolveJotformLanguage(i18n.language);
-  const formSrc = buildFormSrc(JOTFORM_ID, jotformLang);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const open = () => setIsOpen(true);
@@ -106,15 +88,9 @@ export default function BookingDrawer() {
               </div>
             </div>
 
-            {/* JotForm iframe — min-h-0 lets flex-1 shrink so scroll works inside the iframe */}
-            <div className="mx-8 mb-6 min-h-0 flex-1 overflow-auto bg-white">
-              <iframe
-                key={formSrc}
-                title={t('bookingDrawer.iframeTitle')}
-                allow="geolocation; microphone; camera; fullscreen; payment"
-                src={formSrc}
-                className="block h-full min-h-[320px] w-full border-0"
-              />
+            {/* Booking form — min-h-0 lets flex-1 shrink so the inner content scrolls */}
+            <div className="min-h-0 flex-1 overflow-y-auto">
+              <BookingForm />
             </div>
 
             {/* Footer */}
