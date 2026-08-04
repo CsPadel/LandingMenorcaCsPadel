@@ -221,8 +221,7 @@ export const resources = {
           priceLabel: "Total Retreat Price",
           whatsIncluded: "What's included",
           securePlace: "Secure Your Place",
-          talkToConcierge: "Enquire about",
-          talkToConciergeMessage: "I need more information about the Menorca retreat",
+          talkToConcierge: "Enquire now",
           openRetreat: {
             name: "Open Retreat",
             tag: "Solo or Friends",
@@ -285,21 +284,21 @@ export const resources = {
             role: "Partner - Palamon Capital",
             text: "The entire experience was incredibly well thought out from start to finish. The padel coaching was excellent and tailored to different levels, while the off-court activities gave us a chance to experience Menorca beyond the court. The accommodation, restaurants, and private transport were all first-class, making the trip completely stress-free.",
             initials: "J",
-            image: "/imagenes/testimonio-jean.jpg"
+            image: "/imagenes/testi1.jpg"
           },
           {
             name: "Nicolas Maurer",
             role: "CEO - Team Vitality",
             text: "What stood out most was the attention to detail. Everything was seamlessly organized, from airport transfers to restaurant reservations and daily activities. The balance between quality padel sessions and time to enjoy the island's tranquility was perfect. It felt like a premium experience without ever feeling overly structured.",
             initials: "N",
-            image: "/imagenes/testimonio-nicolas.jpg"
+            image: "/imagenes/testi2.jpg"
           },
           {
             name: "Anatole Levy",
             role: "Founder - Bizentis",
             text: "The combination of great coaching, beautiful surroundings, and exceptional hospitality made this a memorable trip. Every aspect of the retreat was carefully curated, from the accommodation and local dining experiences to the boat excursion and private transportation. It was the ideal mix of sport, relaxation, and discovering Menorca.",
             initials: "A",
-            image: "/imagenes/testimonio-jean.jpg"
+            image: "/imagenes/testi3.JPG"
           }
         ]
       },
@@ -316,7 +315,7 @@ export const resources = {
         labelAccommodation: "Accommodation",
         valueAccommodation: "Barceló Nura",
         cta: "Secure Your Place →",
-        talkToConcierge: "Enquire about",
+        talkToConcierge: "Enquire now",
         disclaimer: "No commitment required. Speak with your Personal Concierge first."
       },
       notFound: {
@@ -607,8 +606,7 @@ export const resources = {
           priceLabel: "Precio Total del Retiro",
           whatsIncluded: "Qué incluye",
           securePlace: "Asegurar mi Plaza",
-          talkToConcierge: "Más información",
-          talkToConciergeMessage: "Necesito más información sobre el retiro de Menorca",
+          talkToConcierge: "Consultar ahora",
           openRetreat: {
             name: "Open Retreat",
             tag: "Solo o con amigos",
@@ -671,21 +669,21 @@ export const resources = {
             role: "Partner - Palamon Capital",
             text: "Toda la experiencia estuvo increíblemente bien pensada de principio a fin. El entrenamiento de pádel fue excelente y adaptado a distintos niveles, mientras que las actividades fuera de la pista nos permitieron conocer Menorca más allá de la cancha. El alojamiento, los restaurantes y el transporte privado fueron de primera clase, lo que hizo el viaje completamente libre de estrés.",
             initials: "J",
-            image: "/imagenes/testimonio-jean.jpg"
+            image: "/imagenes/testi1.jpg"
           },
           {
             name: "Nicolas Maurer",
             role: "CEO - Team Vitality",
             text: "Lo que más destacó fue la atención al detalle. Todo estuvo organizado a la perfección, desde los traslados al aeropuerto hasta las reservas en restaurantes y las actividades diarias. El equilibrio entre sesiones de pádel de calidad y tiempo para disfrutar de la tranquilidad de la isla fue perfecto. Se sintió como una experiencia premium sin resultar nunca demasiado estructurada.",
             initials: "N",
-            image: "/imagenes/testimonio-nicolas.jpg"
+            image: "/imagenes/testi2.jpg"
           },
           {
             name: "Anatole Levy",
             role: "Founder - Bizentis",
             text: "La combinación de un gran entrenamiento, un entorno precioso y una hospitalidad excepcional hizo de este un viaje memorable. Cada aspecto del retiro estuvo cuidadosamente seleccionado, desde el alojamiento y las experiencias gastronómicas locales hasta la excursión en barco y el transporte privado. Fue la mezcla ideal de deporte, relax y descubrir Menorca.",
             initials: "A",
-            image: "/imagenes/testimonio-jean.jpg"
+            image: "/imagenes/testi3.JPG"
           }
         ]
       },
@@ -702,7 +700,7 @@ export const resources = {
         labelAccommodation: "Alojamiento",
         valueAccommodation: "Barceló Nura",
         cta: "Asegurar mi Plaza →",
-        talkToConcierge: "Más información",
+        talkToConcierge: "Consultar ahora",
         disclaimer: "Sin compromiso. Habla primero con tu Concierge Personal."
       },
       notFound: {
@@ -992,8 +990,7 @@ export const resources = {
           priceLabel: "Prix Total du Séjour",
           whatsIncluded: "Ce qui est inclus",
           securePlace: "Réserver ma Place",
-          talkToConcierge: "En savoir plus",
-          talkToConciergeMessage: "J'ai besoin de plus d'informations sur le séjour à Minorque",
+          talkToConcierge: "Demander maintenant",
           openRetreat: {
             name: "Séjour Ouvert",
             tag: "Solo ou entre Amis",
@@ -1056,21 +1053,21 @@ export const resources = {
             role: "Partner - Palamon Capital",
             text: "L'ensemble de l'expérience était incroyablement bien pensé du début à la fin. Le coaching padel était excellent et adapté aux différents niveaux, tandis que les activités hors court nous ont permis de découvrir Minorque au-delà du terrain. L'hébergement, les restaurants et le transport privé étaient tous de première classe, rendant le voyage totalement sans stress.",
             initials: "J",
-            image: "/imagenes/testimonio-jean.jpg"
+            image: "/imagenes/testi1.jpg"
           },
           {
             name: "Nicolas Maurer",
             role: "CEO - Team Vitality",
             text: "Ce qui m'a le plus marqué, c'est l'attention aux détails. Tout était organisé de façon fluide, des transferts aéroport aux réservations de restaurants en passant par les activités quotidiennes. L'équilibre entre des sessions de padel de qualité et le temps pour profiter de la tranquillité de l'île était parfait. On avait l'impression d'une expérience premium sans jamais se sentir trop encadré.",
             initials: "N",
-            image: "/imagenes/testimonio-nicolas.jpg"
+            image: "/imagenes/testi2.jpg"
           },
           {
             name: "Anatole Levy",
             role: "Founder - Bizentis",
             text: "La combinaison d'un excellent coaching, de cadres magnifiques et d'une hospitalité exceptionnelle a fait de ce séjour un voyage mémorable. Chaque aspect du retreat était soigneusement sélectionné, de l'hébergement et les expériences gastronomiques locales à l'excursion en bateau et au transport privé. C'était le mix idéal entre sport, détente et découverte de Minorque.",
             initials: "A",
-            image: "/imagenes/testimonio-jean.jpg"
+            image: "/imagenes/testi3.JPG"
           }
         ]
       },
@@ -1087,7 +1084,7 @@ export const resources = {
         labelAccommodation: "Hébergement",
         valueAccommodation: "Barceló Nura",
         cta: "Réserver ma Place →",
-        talkToConcierge: "En savoir plus",
+        talkToConcierge: "Demander maintenant",
         disclaimer: "Sans engagement. Parlez d'abord avec votre Concierge Personnel."
       },
       notFound: {
