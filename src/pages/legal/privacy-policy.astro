@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import LegalLanguageNotice from '../../components/LegalLanguageNotice';
+import LegalPendingNotice from '../../components/LegalPendingNotice.astro';
 import { sitePath, SITE_HOST } from '../../lib/site';
 
 const title = "Privacy Policy | CourtSide Padel Retreats";
@@ -24,9 +25,12 @@ const canonical = sitePath('/legal/privacy-policy');
           <p>CourtSide Padel Retreats ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") operates the website <strong>{SITE_HOST}</strong> and organises luxury padel retreats.</p>
           <p class="mt-3"><strong>Data Controller:</strong><br />
           Crtside Events Ltd (trading as CourtSide Padel Retreats)<br />
-          Company No. 16289087<br />
-          24 Hendham Road, SW17 7DQ<br />
+          Registered in England and Wales, Company No. 16289087<br />
+          24 Hendham Road, London SW17 7DQ, United Kingdom<br />
           Email: <a href="mailto:awatelet@cspadel.com" class="text-brand-gold underline underline-offset-2">awatelet@cspadel.com</a></p>
+
+          <h3 class="text-lg font-medium text-brand-dark mb-2 mt-6">1.1 Our representative in the EU</h3>
+          <LegalPendingNotice reason="Article 27 of the EU GDPR requires a controller established outside the EU that offers goods or services to people in the EU to designate a written representative in a member state where those people are. Crtside Events Ltd is a UK company selling a retreat in Spain to EU residents, so the obligation is engaged. Article 27(2) exempts processing that is occasional, does not involve large-scale processing of special category data, and is unlikely to result in a risk to rights and freedoms — all three must hold. Taking bookings year-round is not obviously 'occasional', and the dietary, allergy and accessibility data collected for every guest is special category data, so the exemption looks unlikely to be available. Worth a considered assessment rather than an assumption. If a representative is appointed, their name and address belong in this section." />
         </section>
 
         <section>
@@ -34,7 +38,8 @@ const canonical = sitePath('/legal/privacy-policy');
           <p>We may collect the following categories of personal data:</p>
           <ul class="list-disc pl-6 space-y-2 mt-3">
             <li><strong>Contact details:</strong> name, email address, phone number</li>
-            <li><strong>Booking information:</strong> group size, preferred dates, accommodation type, special dietary or accessibility requirements</li>
+            <li><strong>Booking information:</strong> group size, preferred dates, accommodation type</li>
+            <li><strong>Special category data:</strong> dietary requirements, allergies, accessibility needs and any health information you choose to share so we can run coaching and activities safely</li>
             <li><strong>Payment details:</strong> processed securely via our payment provider — we do not store full card numbers</li>
             <li><strong>Communications:</strong> enquiries, emails, or messages sent to us</li>
             <li><strong>Technical data:</strong> IP address, browser type, and pages visited, collected via server logs</li>
@@ -52,6 +57,7 @@ const canonical = sitePath('/legal/privacy-policy');
             </thead>
             <tbody class="divide-y divide-brand-dark/10">
               <tr><td class="py-2 pr-4">Respond to enquiries and manage bookings</td><td class="py-2">Contract / Legitimate interest</td></tr>
+              <tr><td class="py-2 pr-4">Dietary, accessibility and health requirements</td><td class="py-2">Your explicit consent (Art. 9(2)(a)); vital interests in an emergency (Art. 9(2)(c))</td></tr>
               <tr><td class="py-2 pr-4">Process payments and issue confirmations</td><td class="py-2">Contract</td></tr>
               <tr><td class="py-2 pr-4">Send retreat-related updates (itinerary changes, reminders)</td><td class="py-2">Contract</td></tr>
               <tr><td class="py-2 pr-4">Marketing communications (only with your consent)</td><td class="py-2">Consent</td></tr>
@@ -99,7 +105,8 @@ const canonical = sitePath('/legal/privacy-policy');
             <li><strong>Withdraw consent</strong> at any time where processing is based on consent</li>
           </ul>
           <p class="mt-3">To exercise any of these rights, contact us at <a href="mailto:awatelet@cspadel.com" class="text-brand-gold underline underline-offset-2">awatelet@cspadel.com</a>. We will respond within one calendar month.</p>
-          <p class="mt-3">You also have the right to lodge a complaint with the <strong>UK Information Commissioner's Office (ICO)</strong> at <a href="https://ico.org.uk" class="text-brand-gold underline underline-offset-2" target="_blank" rel="noopener noreferrer">ico.org.uk</a> or the relevant supervisory authority in your EU member state.</p>
+          <p class="mt-3"><strong>Complaints.</strong> If you are in the EEA, you may complain to the supervisory authority in the member state where you live, where you work, or where the problem happened — a list is published by the <a href="https://www.edpb.europa.eu/about-edpb/our-members_en" class="text-brand-gold underline underline-offset-2" target="_blank" rel="noopener noreferrer">European Data Protection Board</a>. If you are in the UK, you may complain to the <a href="https://ico.org.uk" class="text-brand-gold underline underline-offset-2" target="_blank" rel="noopener noreferrer">Information Commissioner's Office</a>. You can come to us first, but you do not have to.</p>
+          <p class="mt-3">We do not make decisions about you by automated means alone, and we do not profile you in any way that produces legal or similarly significant effects.</p>
         </section>
 
         <section>
@@ -109,7 +116,8 @@ const canonical = sitePath('/legal/privacy-policy');
 
         <section>
           <h2 class="text-2xl font-light text-brand-dark mb-4">9. Security</h2>
-          <p>We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure. Our website is served over HTTPS with security headers including CSP, HSTS, and X-Frame-Options.</p>
+          <p>We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure. This site is served over HTTPS with security headers including HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy and Permissions-Policy.</p>
+          <p class="mt-3">If a breach is likely to result in a high risk to your rights and freedoms, we will tell you without undue delay, and we will notify the competent supervisory authority within 72 hours where required.</p>
         </section>
 
         <section>
