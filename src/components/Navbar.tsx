@@ -17,11 +17,14 @@ export default function Navbar({ hideLangToggle = false }: Readonly<NavbarProps>
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Absolute, not bare fragments: the navbar also renders on the legal pages,
+  // where these sections do not exist. As relative anchors the entire
+  // navigation did nothing on every sub-page.
   const navLinks = [
-    { href: '#includes', label: t('navbar.includes') },
-    { href: '#itinerary', label: t('navbar.itinerary') },
-    { href: '#rooms',    label: t('navbar.book') },
-    { href: '#faq',     label: t('navbar.faq') },
+    { href: '/#includes',  label: t('navbar.includes') },
+    { href: '/#itinerary', label: t('navbar.itinerary') },
+    { href: '/#rooms',     label: t('navbar.book') },
+    { href: '/#faq',       label: t('navbar.faq') },
   ];
 
   return (
