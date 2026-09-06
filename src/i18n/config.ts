@@ -12,6 +12,20 @@ export const resources = {
         book: "Book",
         faq: "FAQ"
       },
+      brandBar: {
+        label: "Courtside Padel Retreats",
+        allRetreats: "All Courtside retreats",
+        ourStory: "Our Story",
+        experience: "The Experience",
+        destinations: "Destinations",
+        upcomingRetreats: "Upcoming Retreats",
+        corporate: "Corporate & Executive",
+        menorca: "Menorca",
+        eastSussex: "UK (East Sussex)",
+        bali: "Bali",
+        dubai: "Dubai",
+        thisRetreat: "You are viewing"
+      },
       menorcaPage: {
         heroTitle: "MENORCA",
         heroSubtitle: "A Mediterranean Sanctuary. Five days. Padel, lifestyle, tranquility.",
@@ -327,6 +341,7 @@ export const resources = {
       cookieConsent: {
         message: "We use an essential cookie to remember your language preference.",
         accept: "Got it",
+        reject: "Reject non-essential",
         learnMore: "Cookie Policy"
       },
       bookingDrawer: {
@@ -396,6 +411,20 @@ export const resources = {
         itinerary: "Itinerario",
         book: "Reservar",
         faq: "FAQ"
+      },
+      brandBar: {
+        label: "Courtside Padel Retreats",
+        allRetreats: "Todos los retiros Courtside",
+        ourStory: "Nuestra historia",
+        experience: "La experiencia",
+        destinations: "Destinos",
+        upcomingRetreats: "Próximos retiros",
+        corporate: "Corporativo y ejecutivo",
+        menorca: "Menorca",
+        eastSussex: "Reino Unido (East Sussex)",
+        bali: "Bali",
+        dubai: "Dubái",
+        thisRetreat: "Estás viendo"
       },
       menorcaPage: {
         heroTitle: "MENORCA",
@@ -712,6 +741,7 @@ export const resources = {
       cookieConsent: {
         message: "Usamos una cookie esencial para recordar tu preferencia de idioma.",
         accept: "Entendido",
+        reject: "Rechazar no esenciales",
         learnMore: "Política de Cookies"
       },
       bookingDrawer: {
@@ -781,6 +811,20 @@ export const resources = {
         itinerary: "Itinéraire",
         book: "Réserver",
         faq: "FAQ"
+      },
+      brandBar: {
+        label: "Courtside Padel Retreats",
+        allRetreats: "Toutes les retraites Courtside",
+        ourStory: "Notre histoire",
+        experience: "L'expérience",
+        destinations: "Destinations",
+        upcomingRetreats: "Prochaines retraites",
+        corporate: "Entreprises et dirigeants",
+        menorca: "Minorque",
+        eastSussex: "Royaume-Uni (East Sussex)",
+        bali: "Bali",
+        dubai: "Dubaï",
+        thisRetreat: "Vous consultez"
       },
       menorcaPage: {
         heroTitle: "MINORQUE",
@@ -1096,6 +1140,7 @@ export const resources = {
       cookieConsent: {
         message: "Nous utilisons un cookie essentiel pour mémoriser votre préférence de langue.",
         accept: "Compris",
+        reject: "Refuser les non essentiels",
         learnMore: "Politique de Cookies"
       },
       bookingDrawer: {

@@ -27,9 +27,10 @@ export default function Navbar({ hideLangToggle = false }: Readonly<NavbarProps>
     { href: '/#faq',       label: t('navbar.faq') },
   ];
 
+  // top-9 clears the BrandBar, which is fixed above this at h-9.
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
+      className={`fixed top-9 left-0 right-0 z-50 transition-all duration-300 ease-out ${
         isScrolled
           ? 'bg-brand-dark shadow-lg shadow-black/30'
           : 'bg-transparent backdrop-blur-sm'
