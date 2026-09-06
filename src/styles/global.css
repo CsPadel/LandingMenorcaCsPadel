@@ -13,6 +13,11 @@
   --color-brand-dark-2: #041E36;
   --color-brand-light: #FFFFFF;
   --color-text-body: #333333;
+
+  /* Kept in step with the main site so shared components look identical. */
+  --radius-button: 0.625rem;
+  --radius-card: 1rem;
+  --radius-input: 0.5rem;
 }
 
 @layer base {

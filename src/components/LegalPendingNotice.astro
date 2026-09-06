@@ -1,0 +1,20 @@
+---
+/**
+ * Marks an obligation that wording alone cannot satisfy — one that needs a
+ * purchase, an appointment or a document before these pages are accurate.
+ *
+ * Deliberately loud. These are not drafting gaps; they are compliance items,
+ * and nobody on the delivery side should be able to miss them.
+ */
+interface Props {
+  readonly reason: string;
+}
+
+const { reason } = Astro.props;
+---
+
+<div class="my-6 rounded border-2 border-dashed border-red-500/60 bg-red-50 px-5 py-4 text-sm text-red-900">
+  <p class="font-semibold uppercase tracking-[0.2em] text-xs mb-2">Pending founder / legal review</p>
+  <p>{reason}</p>
+  <slot />
+</div>

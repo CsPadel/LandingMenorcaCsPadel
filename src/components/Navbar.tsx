@@ -17,16 +17,20 @@ export default function Navbar({ hideLangToggle = false }: Readonly<NavbarProps>
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Absolute, not bare fragments: the navbar also renders on the legal pages,
+  // where these sections do not exist. As relative anchors the entire
+  // navigation did nothing on every sub-page.
   const navLinks = [
-    { href: '#includes', label: t('navbar.includes') },
-    { href: '#itinerary', label: t('navbar.itinerary') },
-    { href: '#rooms',    label: t('navbar.book') },
-    { href: '#faq',     label: t('navbar.faq') },
+    { href: '/#includes',  label: t('navbar.includes') },
+    { href: '/#itinerary', label: t('navbar.itinerary') },
+    { href: '/#rooms',     label: t('navbar.book') },
+    { href: '/#faq',       label: t('navbar.faq') },
   ];
 
+  // top-9 clears the BrandBar, which is fixed above this at h-9.
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
+      className={`fixed top-9 left-0 right-0 z-50 transition-all duration-300 ease-out ${
         isScrolled
           ? 'bg-brand-dark shadow-lg shadow-black/30'
           : 'bg-transparent backdrop-blur-sm'

@@ -10,6 +10,7 @@ import '@fontsource/cormorant-garamond/latin-400.css';
 import '@fontsource/cormorant-garamond/latin-600.css';
 import '@fontsource/cormorant-garamond/latin-300-italic.css';
 import '@fontsource/cormorant-garamond/latin-400-italic.css';
+import BrandBar from '../components/BrandBar';
 import Navbar from '../components/Navbar';
 import FooterIsland from '../components/FooterIsland';
 import CookieConsent from '../components/CookieConsent';
@@ -150,6 +151,7 @@ const alternateLocales = Object.values(localeMap).filter((l) => l !== currentLoc
 		>
 			Skip to main content
 		</a>
+		<BrandBar client:load />
 		<Navbar hideLangToggle={hideLangToggle} client:load />
 		<slot />
 		<FooterIsland client:idle />
